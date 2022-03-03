@@ -21,6 +21,6 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 # Prompt
 Clear-Host
 # neofetch.ps1
-Invoke-Expression (&starship init powershell)
+# Invoke-Expression (&starship init powershell)
 # oh-my-posh --init --shell pwsh --config ~\.config\powershell\truepowerline.omp.json | Invoke-Expression
-# oh-my-posh --init --shell pwsh --config ~\AppData\Local\Programs\oh-my-posh\themes\atomicBit.omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config ~\scoop\apps\oh-my-posh\current\themes\atomicBit.omp.json | Invoke-Expression
