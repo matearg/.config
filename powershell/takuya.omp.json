@@ -5,59 +5,90 @@
       "alignment": "left",
       "segments": [
         {
+          "background": "transparent",
+          "foreground": "#FFEE58",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "template": " \uf0e7 "
+          },
+          "style": "powerline",
+          "type": "root"
+        },
+        {
           "background": "darkGray",
           "foreground": "white",
           "properties": {
-            "template": " {{ .Name }} "
+            "template": " {{ .UserName }}@{{ .HostName }} "
           },
           "style": "diamond",
-          "type": "shell"
-        },
-        {
-          "background": "transparent",
-          "foreground": "#FFEE58",
-          "properties": {
-            "root_icon": "\uf292",
-            "template": "<parentBackground>\ue0b0</> \uf0e7 "
-          },
-          "style": "diamond",
-          "type": "root"
+          "type": "session"
         },
         {
           "background": "blue",
           "foreground": "white",
           "powerline_symbol": "\ue0b0",
           "properties": {
-            "style": "full",
-            "template": " {{ .Path }} "
+            "style": "agnoster_short",
+            "template": " {{ path .Path .Location }} "
           },
           "style": "powerline",
           "type": "path"
         },
-        {
-          "background": "#353535",
+                {
+          "background": "#fffffb",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#ff9248{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#f26d50{{ end }}",
             "{{ if gt .Ahead 0 }}#89d1dc{{ end }}",
-            "{{ if gt .Behind 0 }}#c5b6ad{{ end }}"
+            "{{ if gt .Behind 0 }}#c5b6ad{{ end }}",
+            "{{ if .UpstreamGone }}#d1c7b7{{ end }}"
           ],
-          "foreground": "#ffffff",
+          "foreground": "#100e23",
           "powerline_symbol": "\ue0b0",
           "properties": {
-            "branch_icon": "\ue725 ",
+            "azure_devops_icon": "\ufd03 ",
+            "bitbucket_icon": "\uf171 ",
+            "branch_gone_icon": "\uf68e ",
+            "branch_icon": "\ue0a0 ",
+            "branch_identical_icon": "\uf690 ",
+            "commit_icon": "\uf417 ",
+            "fetch_stash_count": true,
             "fetch_status": true,
             "fetch_upstream_icon": true,
-            "template": " {{ .HEAD }} {{ if .Working.Changed }}{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#ef5350> \uf046 {{ .Staging.String }}</>{{ end }} "
+            "fetch_worktree_count": true,
+            "git_icon": "\uf1d3 ",
+            "github_icon": "\uf408 ",
+            "gitlab_icon": "\uf296 ",
+            "tag_icon": "\uf412 ",
+            "template": " {{ if( .UpstreamIcon ) }}{{ url .UpstreamIcon .UpstreamURL }} {{ end }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{.Working.String}}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{.Staging.String}}{{ end }}{{ if gt .StashCount 0 }}  \uf692 {{.StashCount}}{{ end }}{{ if gt .WorktreeCount 0 }}{{if .IsWorkTree}}{{ end }}  \uf1bb {{if .IsWorkTree}}{{ end }}{{.WorktreeCount}}{{ end }} "
           },
           "style": "powerline",
           "type": "git"
+        },
+        {
+          "background": "#906cff",
+          "foreground": "#100e23",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
+          },
+          "style": "powerline",
+          "type": "python"
+        },
+        {
+          "background": "#ff8080",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "template": " *_* "
+          },
+          "style": "powerline",
+          "type": "exit"
         }
       ],
       "type": "prompt"
     }
   ],
   "final_space": true,
-  "osc99": true,
   "version": 1
 }
