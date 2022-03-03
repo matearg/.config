@@ -75,7 +75,6 @@ nmap <leader>w :w <CR>
 nmap <leader>q :q <CR>
 nmap <leader>qa :qa <CR>
 nmap <leader>x :x <CR>
-nmap <silent> <leader>nt :NERDTreeToggle<CR>
 
 " Theme Configuration
 set termguicolors
@@ -99,7 +98,9 @@ let g:airline_theme='dracula'
 let g:airline_powerline_fonts = 1
 
 " Nerd Tree configuration
+nmap <leader>nt :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
 let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
