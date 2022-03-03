@@ -64,7 +64,6 @@ set scrolloff=8
 set nowrap
 set cursorline
 set nocompatible
-set signcolumn=yes
 
 let mapleader = " "
 let python_highlight_all = 1
@@ -95,7 +94,7 @@ colorscheme gruvbox
 " Airline configuration
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='gruvbox'
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 " Nerd Tree configuration
 nmap <leader>nt :NERDTreeFind<CR>
