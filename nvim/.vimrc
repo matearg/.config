@@ -97,7 +97,8 @@ let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 0
 
 " Nerd Tree configuration
-nmap <leader>nt :NERDTreeFind<CR>
+nmap <leader>nf :NERDTreeFind<CR>
+nmap <leader>nt :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeFileExtensionHighlightFullName = 1
@@ -121,6 +122,7 @@ set smartcase                   " ... unless they contain at least one capital l
 let g:kite_supported_languages = ['*']
 set completeopt+=menuone
 set completeopt+=noselect
+autocmd CompleteDone * if !pumvisible() | pclose | endif
 nmap <silent> <leader>gK <Plug>(kite-docs)
 
 " Coc configuration
