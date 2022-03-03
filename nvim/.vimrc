@@ -78,7 +78,7 @@ nmap <leader>x :x <CR>
 
 " Theme Configuration
 set termguicolors
-colorscheme dracula
+colorscheme gruvbox
 
 " Lighline 
 " let g:lightline = {
@@ -94,7 +94,7 @@ colorscheme dracula
 
 " Airline configuration
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='dracula'
+let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 
 " Nerd Tree configuration
