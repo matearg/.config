@@ -8,9 +8,11 @@ Import-Module PSReadLine
 
 # Alias
 Set-Alias ll ls
-Set-Alias g git
 Set-Alias c clear
+Set-Alias wh where.exe
+Set-Alias g git
 Set-Alias n nvim
+Set-Alias v nvim
 Set-Alias vim nvim
 
 # PSReadLine
