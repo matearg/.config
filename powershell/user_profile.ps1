@@ -16,9 +16,9 @@ Set-Alias v nvim
 Set-Alias vim nvim
 
 # PSReadLine
-Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 Set-PSReadLineOption -EditMode Windows
-# Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -PredictionViewStyle ListView
 
 # Prompt
 Clear-Host
