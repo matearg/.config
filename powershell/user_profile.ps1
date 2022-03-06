@@ -16,12 +16,12 @@ Set-Alias v nvim
 Set-Alias vim nvim
 
 # PSReadLine
-Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -EditMode Windows
-Set-PSReadLineOption -PredictionViewStyle ListView
+# Set-PSReadLineOption -PredictionViewStyle ListView
 
 # Prompt
-# Clear-Host
+Clear-Host
 # neofetch.ps1
 Invoke-Expression (&starship init powershell)
 # oh-my-posh --init --shell pwsh --config ~\.config\powershell\takuya.omp.json | Invoke-Expression

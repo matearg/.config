@@ -108,7 +108,7 @@ let g:NERDTreeHighlightFolders = 1
 let g:NERDTreeHighlightFoldersFullName = 1
 
 " Gitgutter configuration
-let g:gitgutter_git_executable = 'C:\Users\mateo\scoop\shims\git.exe'
+let g:gitgutter_git_executable = 'C:\Users\Paula\scoop\shims\git.exe'
 let g:gitgutter_map_keys = 0
 
 " Searching
