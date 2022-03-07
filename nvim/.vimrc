@@ -14,6 +14,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'itchyny/vim-gitbranch'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 
 " VIM prettified
 Plug 'ap/vim-css-color'
@@ -24,6 +25,7 @@ Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'alvan/vim-closetag'
+Plug 'vim-syntastic/syntastic'
 
 " Syntax and highlighting
 Plug 'sheerun/vim-polyglot'
@@ -110,6 +112,16 @@ let g:NERDTreeHighlightFoldersFullName = 1
 " Gitgutter configuration
 let g:gitgutter_git_executable = 'C:\Users\mateo\scoop\shims\git.exe'
 let g:gitgutter_map_keys = 0
+
+" Syntastic configuration
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Searching
 set hlsearch                    " highlight matches
