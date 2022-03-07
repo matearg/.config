@@ -88,7 +88,7 @@ nmap <leader>x :x <CR>
 " Theme configs
 set termguicolors
 set background=dark
-colorscheme palenight
+colorscheme gruvbox
 
 " Ligthline configs
 " let g:lightline = {
@@ -113,7 +113,7 @@ colorscheme palenight
 
 " Airline configs
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='palenight'
+let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 
 " Nerd Tree configs
