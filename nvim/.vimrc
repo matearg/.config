@@ -52,7 +52,7 @@ Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
-" Basic Configurations 
+" Basic configs 
 syntax on
 set number
 set numberwidth=1
@@ -86,11 +86,11 @@ nmap <leader>q :q <CR>
 nmap <leader>qa :qa <CR>
 nmap <leader>x :x <CR>
 
-" Theme Configuration
+" Theme configs
 set termguicolors
 colorscheme onedark
 
-" Ligthline 
+" Ligthline configs
 let g:lightline = {
       \ 'colorscheme': 'onedark',
       \ 'active': {
@@ -111,12 +111,12 @@ function! LightlineGitGutter()
   return printf('+%d ~%d -%d', l:added, l:modified, l:removed)
 endfunction
 
-" Airline configuration
+" Airline configs
 " let g:airline#extensions#tabline#enabled = 1
 " let g:airline_theme='onedark'
 " let g:airline_powerline_fonts = 1
 
-" Nerd Tree configuration
+" Nerd Tree configs
 nmap <leader>nf :NERDTreeFind<CR>
 nmap <leader>nt :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
@@ -127,11 +127,11 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 let g:NERDTreeHighlightFolders = 1
 let g:NERDTreeHighlightFoldersFullName = 1
 
-" Gitgutter configuration
+" Gitgutter configs
 let g:gitgutter_git_executable = 'C:\Users\mateo\scoop\shims\git.exe'
 let g:gitgutter_map_keys = 0
 
-" Syntastic configuration
+" Syntastic configs
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -147,7 +147,7 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter Basic configurations
 
-" Kite configuration
+" Kite configs
 " All the languages Kite supports
 let g:kite_supported_languages = ['*']
 set completeopt+=menuone
@@ -155,7 +155,7 @@ set completeopt+=noselect
 autocmd CompleteDone * if !pumvisible() | pclose | endif
 nmap <silent> <leader>gK <Plug>(kite-docs)
 
-" Coc configuration
+" Coc configs
 set hidden
 
 " Some servers have issues with backup files, see #649.
