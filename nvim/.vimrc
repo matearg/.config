@@ -6,6 +6,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', {'name':'dracula'}
 Plug 'morhetz/gruvbox'
 Plug 'romgrk/doom-one.vim'
+Plug 'JoosepAlviste/palenightfall.nvim'
 
 " Other plugins
 Plug 'christoomey/vim-tmux-navigator'
