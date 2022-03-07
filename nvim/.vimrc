@@ -37,10 +37,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'kiteco/vim-plugin'
 
 " Statusline
-" Plug 'maximbaz/lightline-ale'
-" Plug 'itchyny/lightline.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'maximbaz/lightline-ale'
+Plug 'itchyny/lightline.vim'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -82,22 +82,31 @@ nmap <leader>x :x <CR>
 set termguicolors
 colorscheme onedark
 
-" Lighline 
-" let g:lightline = {
-"       \ 'colorscheme': 'onedark',
-"       \ 'active': {
-"       \   'left': [ [ 'mode', 'paste' ],
-"       \             [ 'absolutepath', 'readonly', 'gitbranch', 'modified' ] ]
-"       \ },
-"       \ 'component_function': {
-"       \   'gitbranch': 'FugitiveHead'
-"       \ },
-"       \ }
+" Ligthline 
+let g:lightline = {
+      \ 'colorscheme': 'onedark',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'absolutepath', 'readonly', 'githunks', 'gitbranch' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead',
+      \   'githunks': 'LightlineGitGutter'
+      \ },
+      \ }
+
+function! LightlineGitGutter()
+  if !get(g:, 'gitgutter_enabled', 0) || empty(FugitiveHead())
+    return ''
+  endif
+  let [ l:added, l:modified, l:removed ] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', l:added, l:modified, l:removed)
+endfunction
 
 " Airline configuration
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='onedark'
-let g:airline_powerline_fonts = 1
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline_theme='onedark'
+" let g:airline_powerline_fonts = 1
 
 " Nerd Tree configuration
 nmap <leader>nf :NERDTreeFind<CR>
