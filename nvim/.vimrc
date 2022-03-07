@@ -1,10 +1,8 @@
-"----------------------------------------"
-" ██    ██ ██ ███    ███ ██████   ██████ " 
-" ██    ██ ██ ████  ████ ██   ██ ██      " 
-" ██    ██ ██ ██ ████ ██ ██████  ██      " 
-"  ██  ██  ██ ██  ██  ██ ██   ██ ██      " 
-"   ████   ██ ██      ██ ██   ██  ██████ " 
-"----------------------------------------"
+" ██    ██ ██ ███    ███ ██████   ██████
+" ██    ██ ██ ████  ████ ██   ██ ██     
+" ██    ██ ██ ██ ████ ██ ██████  ██     
+"  ██  ██  ██ ██  ██  ██ ██   ██ ██     
+"   ████   ██ ██      ██ ██   ██  ██████
 
 " Plugins
 call plug#begin('~/AppData/Local/nvim/plugged')
@@ -13,11 +11,12 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', {'name':'dracula'}
 Plug 'morhetz/gruvbox'
-Plug 'romgrk/doom-one.vim'
 Plug 'drewtempelmeyer/palenight.vim'
 
 " Other plugins
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Git integrations
 Plug 'itchyny/vim-gitbranch'
@@ -93,7 +92,7 @@ colorscheme palenight
 
 " Ligthline configs
 " let g:lightline = {
-"       \ 'colorscheme': 'gruvbox',
+"       \ 'colorscheme': 'palenight',
 "       \ 'active': {
 "       \   'left': [ [ 'mode', 'paste' ],
 "       \             [ 'absolutepath', 'readonly', 'githunks', 'gitbranch' ] ]
@@ -103,14 +102,14 @@ colorscheme palenight
 "       \   'githunks': 'LightlineGitGutter'
 "       \ },
 "       \ }
-
-function! LightlineGitGutter()
-  if !get(g:, 'gitgutter_enabled', 0) || empty(FugitiveHead())
-    return ''
-  endif
-  let [ l:added, l:modified, l:removed ] = GitGutterGetHunkSummary()
-  return printf('+%d ~%d -%d', l:added, l:modified, l:removed)
-endfunction
+" 
+" function! LightlineGitGutter()
+"   if !get(g:, 'gitgutter_enabled', 0) || empty(FugitiveHead())
+"     return ''
+"   endif
+"   let [ l:added, l:modified, l:removed ] = GitGutterGetHunkSummary()
+"   return printf('+%d ~%d -%d', l:added, l:modified, l:removed)
+" endfunction
 
 " Airline configs
 let g:airline#extensions#tabline#enabled = 1
@@ -118,8 +117,8 @@ let g:airline_theme='palenight'
 let g:airline_powerline_fonts = 1
 
 " Nerd Tree configs
-nmap <leader>nf :NERDTreeFind<CR>
-nmap <leader>nt :NERDTreeToggle<CR>
+nmap <leader>nf :NERDTreeFind <CR>
+nmap <leader>nt :NERDTreeToggle <CR>
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeFileExtensionHighlightFullName = 1
@@ -147,6 +146,9 @@ set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter Basic configurations
+
+" FZF configs
+nmap <leader>fz :Files <CR>
 
 " Kite configs
 " All the languages Kite supports
