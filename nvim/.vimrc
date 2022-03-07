@@ -149,6 +149,7 @@ set smartcase                   " ... unless they contain at least one capital l
 
 " FZF configs
 nmap <leader>fz :Files <CR>
+nmap <leader>fg :GFiles <CR>
 
 " Kite configs
 " All the languages Kite supports
