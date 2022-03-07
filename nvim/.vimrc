@@ -17,6 +17,7 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'voldikss/vim-floaterm'
 
 " Git integrations
 Plug 'itchyny/vim-gitbranch'
@@ -141,15 +142,19 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" FZF configs
+nmap <leader>fz :Files <CR>
+nmap <leader>fg :GFiles <CR>
+
+" Floaterm configs
+let g:floaterm_shell='"C:\Users\mateo\AppData\Local\Microsoft\WindowsApps\Microsoft.PowerShell_8wekyb3d8bbwe\pwsh.exe" -nologo'
+nmap <leader>te :FloatermToggle <CR>
+
 " Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter Basic configurations
-
-" FZF configs
-nmap <leader>fz :Files <CR>
-nmap <leader>fg :GFiles <CR>
 
 " Kite configs
 " All the languages Kite supports
