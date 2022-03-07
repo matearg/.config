@@ -22,7 +22,7 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 
 # Prompt
 Clear-Host
-# neofetch.ps1
-# Invoke-Expression (&starship init powershell)
-oh-my-posh --init --shell pwsh --config ~\.config\powershell\takuya.omp.json | Invoke-Expression
+# neofetch
+Invoke-Expression (&starship init powershell)
+# oh-my-posh --init --shell pwsh --config ~\.config\powershell\takuya.omp.json | Invoke-Expression
 # oh-my-posh --init --shell pwsh --config ~\scoop\apps\oh-my-posh\current\themes\atomicBit.omp.json | Invoke-Expression
