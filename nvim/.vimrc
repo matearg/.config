@@ -14,7 +14,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', {'name':'dracula'}
 Plug 'morhetz/gruvbox'
 Plug 'romgrk/doom-one.vim'
-Plug 'JoosepAlviste/palenightfall.nvim'
+Plug 'drewtempelmeyer/palenight.vim'
 
 " Other plugins
 Plug 'christoomey/vim-tmux-navigator'
@@ -25,18 +25,18 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-signify'
 
-" VIM prettified
-Plug 'ap/vim-css-color'
+" File manage
+Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " IDE plugins
-Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'alvan/vim-closetag'
 Plug 'vim-syntastic/syntastic'
-
-" Syntax and highlighting
+Plug 'vim-python/python-syntax'
+Plug 'ap/vim-css-color'
 Plug 'sheerun/vim-polyglot'
 Plug 'Yggdroot/indentLine'
 
@@ -45,10 +45,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'kiteco/vim-plugin'
 
 " Statusline
-Plug 'maximbaz/lightline-ale'
-Plug 'itchyny/lightline.vim'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
+" Plug 'maximbaz/lightline-ale'
+" Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -88,20 +88,21 @@ nmap <leader>x :x <CR>
 
 " Theme configs
 set termguicolors
-colorscheme onedark
+set background=dark
+colorscheme palenight
 
 " Ligthline configs
-let g:lightline = {
-      \ 'colorscheme': 'onedark',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'absolutepath', 'readonly', 'githunks', 'gitbranch' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead',
-      \   'githunks': 'LightlineGitGutter'
-      \ },
-      \ }
+" let g:lightline = {
+"       \ 'colorscheme': 'gruvbox',
+"       \ 'active': {
+"       \   'left': [ [ 'mode', 'paste' ],
+"       \             [ 'absolutepath', 'readonly', 'githunks', 'gitbranch' ] ]
+"       \ },
+"       \ 'component_function': {
+"       \   'gitbranch': 'FugitiveHead',
+"       \   'githunks': 'LightlineGitGutter'
+"       \ },
+"       \ }
 
 function! LightlineGitGutter()
   if !get(g:, 'gitgutter_enabled', 0) || empty(FugitiveHead())
@@ -112,9 +113,9 @@ function! LightlineGitGutter()
 endfunction
 
 " Airline configs
-" let g:airline#extensions#tabline#enabled = 1
-" let g:airline_theme='onedark'
-" let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='palenight'
+let g:airline_powerline_fonts = 1
 
 " Nerd Tree configs
 nmap <leader>nf :NERDTreeFind<CR>
