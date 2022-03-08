@@ -12,6 +12,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', {'name':'dracula'}
 Plug 'morhetz/gruvbox'
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'sainnhe/gruvbox-material'
 
 " Other plugins
 Plug 'christoomey/vim-tmux-navigator'
