@@ -44,6 +44,7 @@ Plug 'Yggdroot/indentLine'
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'kiteco/vim-plugin'
+Plug 'github/copilot.vim'
 
 " Statusline
 " Plug 'maximbaz/lightline-ale'
