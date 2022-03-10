@@ -167,7 +167,7 @@ let g:floaterm_shell='"C:\Users\mateo\AppData\Local\Microsoft\WindowsApps\Micros
 nmap <silent> <leader>te :FloatermToggle <CR>
 
 " Searching
-set hlsearch                    " highlight matches
+set nohlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter Basic configurations
