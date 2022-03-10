@@ -29,6 +29,11 @@ truncation_length = 2
 truncation_symbol = ""
 
 # Replace the "❯" symbol in the prompt
+[character]
+success_symbol = "[✗](bold yellow)"
+error_symbol = "[✗](bold red)"
+
+# After puting the line_break in false unconmment this
 # [character]
-# success_symbol = "[>>](bold green)"
-# error_symbol = "[>>](bold red)"
+# success_symbol = "[❯❯❯](bold green)"
+# error_symbol = "[❯❯❯](bold red)"
