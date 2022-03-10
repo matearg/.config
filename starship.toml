@@ -9,7 +9,7 @@ disabled = true
 [time]
 disabled = false
 format = '[\[$time\]]($style) '
-time_format = "%R"
+time_format = "%d-%b-%y %R"
 
 # Shows the shows the current user name
 [username]
