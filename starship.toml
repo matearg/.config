@@ -5,6 +5,19 @@ add_newline = false
 [line_break]
 disabled = true
 
+# Shows the shows the current user name
+[username]
+format = "[$user](yellow)"
+disabled = false
+show_always = true
+
+# Shows the current host name
+[hostname]
+ssh_only = false
+format = "@[$hostname](red) "
+trim_at = ""
+disabled = false
+
 # Replace the "❯" symbol in the prompt
 # [character]
 # success_symbol = "[>>](bold green)"
