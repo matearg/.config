@@ -130,8 +130,8 @@ let g:airline_theme='palenight'
 let g:airline_powerline_fonts = 1
 
 " Nerd Tree configs
-nmap <leader>nf :NERDTreeFind <CR>
-nmap <leader>nt :NERDTreeToggle <CR>
+nmap <silent> <leader>nf :NERDTreeFind <CR>
+nmap <silent> <leader>nt :NERDTreeToggle <CR>
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeFileExtensionHighlightFullName = 1
@@ -155,12 +155,12 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " FZF configs
-nmap <leader>fz :Files <CR>
-nmap <leader>fg :GFiles <CR>
+nmap <silent> <leader>fz :Files <CR>
+nmap <silent> <leader>fg :GFiles <CR>
 
 " Floaterm configs
 let g:floaterm_shell='"C:\Users\mateo\AppData\Local\Microsoft\WindowsApps\Microsoft.PowerShell_8wekyb3d8bbwe\pwsh.exe" -nologo'
-nmap <leader>te :FloatermToggle <CR>
+nmap <silent> <leader>te :FloatermToggle <CR>
 
 " Searching
 set hlsearch                    " highlight matches
