@@ -8,7 +8,7 @@ disabled = true
 # Shows the time
 [time]
 disabled = false
-format = '[\[ $time \]]($style) '
+format = '[\[$time\]]($style) '
 time_format = "%R"
 
 # Shows the shows the current user name
