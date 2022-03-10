@@ -59,6 +59,7 @@ Plug 'github/copilot.vim'
 " Plug 'itchyny/lightline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'enricobacis/vim-airline-clock'
 
 call plug#end()
 
@@ -128,6 +129,9 @@ colorscheme palenight
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='palenight'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#clock#auto = 1
+let g:airline#extensions#clock#format = '%H:%M'
+let g:airline#extensions#clock#updatetime = 1000
 
 " Nerd Tree configs
 nmap <silent> <leader>nf :NERDTreeFind <CR>
