@@ -84,6 +84,8 @@ set guioptions-=L
 set scrolloff=8
 set nowrap
 set cursorline
+set cmdheight=2
+set signcolumn=auto
 set nocompatible
 
 let mapleader = " "
