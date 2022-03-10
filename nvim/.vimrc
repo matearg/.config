@@ -168,7 +168,7 @@ set smartcase                   " ... unless they contain at least one capital l
 
 " Kite configs
 " All the languages Kite supports
-let g:kite_supported_languages = ['*']
+let g:kite_supported_languages = []
 set completeopt+=menuone
 set completeopt+=noselect
 autocmd CompleteDone * if !pumvisible() | pclose | endif
