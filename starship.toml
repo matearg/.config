@@ -24,8 +24,9 @@ format = "@[$hostname](bold red) "
 trim_at = ""
 disabled = false
 
+# Shows the current directory
 [directory]
-truncation_length = 2
+truncation_length = 1
 truncation_symbol = ""
 
 # Replace the "❯" symbol in the prompt
