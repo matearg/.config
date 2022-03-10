@@ -64,36 +64,36 @@ Plug 'enricobacis/vim-airline-clock'
 call plug#end()
 
 " Basic configs 
-syntax on
-set number
-set numberwidth=1
-set mouse=a
-set clipboard=unnamed
-set showcmd
-set ruler
-set encoding=UTF-8
-set showmatch
-set sw=4
-set autoindent
-set expandtab
-set relativenumber
-set laststatus=2
-set backspace=2
-set noshowmode
-set guioptions-=T
-set guioptions-=L
-set scrolloff=8
-set nowrap
-set cursorline
-set noswapfile
-set cmdheight=2
-set signcolumn=auto
-set hidden
-set nobackup
-set nowritebackup
-set updatetime=300
-set shortmess+=c
-set nocompatible
+syntax on   " Enable syntax highlighting
+set number   " Show line numbers
+set numberwidth=1   " Show line numbers with 1 digit
+set relativenumber   " Show relative line numbers
+set mouse=a   " Enable mouse support
+set clipboard=unnamedplus   " Enable clipboard support
+set showcmd   " Show command in status line
+set ruler   " Show a ruler
+set encoding=UTF-8   " Set encoding
+set showmatch   " Show matching brackets
+set shiftwidth=4   " Set shiftwidth to 4
+set tabstop=4   " Set tabstop to 4
+set softtabstop=4   " Set softtabstop to 4
+set expandtab   " Expand tabs to spaces
+set autoindent   " Autoindent
+set laststatus=2   " Show status bar
+set noshowmode   " Disable showmode
+set scrolloff=8   " Set scrolloff to 8
+set nowrap   " Disable wrapping
+set cursorline   " Highlight current line
+set cmdheight=2   " Set cmdheight to 2
+set signcolumn=auto   " Show signs in the right side of the screen
+set noswapfile   " Disable swapfile
+set hidden   " Hide buffers but let them open
+set nobackup   " Disable backup files
+set noswapfile   " Disable swapfile
+set nowritebackup   " Disable writebackup
+set updatetime=300   " Set update time to 300ms
+set shortmess+=c   " Show messages in the status line
+set nocompatible   " Disable vim compatibility
 
 let mapleader = " "
 let python_highlight_all = 1
