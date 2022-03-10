@@ -31,7 +31,7 @@ truncation_symbol = ""
 
 # Replace the "❯" symbol in the prompt
 [character]
-success_symbol = "[✗](bold yellow)"
+success_symbol = "[✗](bold white)"
 error_symbol = "[✗](bold red)"
 
 # After puting the line_break in false unconmment this
