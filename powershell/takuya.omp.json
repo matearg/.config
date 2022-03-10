@@ -43,7 +43,7 @@
             "{{ if gt .Behind 0 }}#c5b6ad{{ end }}",
             "{{ if .UpstreamGone }}#d1c7b7{{ end }}"
           ],
-          "foreground": "#100e23",
+          "foreground": "#fffffb",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "azure_devops_icon": "\ufd03 ",
