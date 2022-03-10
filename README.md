@@ -1,2 +1,2 @@
 # .config
-Here I will put all mi config files :)
+Here I will put all mi dotfiles :)
