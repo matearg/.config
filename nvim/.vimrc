@@ -85,8 +85,14 @@ set guioptions-=L
 set scrolloff=8
 set nowrap
 set cursorline
+set noswapfile
 set cmdheight=2
 set signcolumn=auto
+set hidden
+set nobackup
+set nowritebackup
+set updatetime=300
+set shortmess+=c
 set nocompatible
 
 let mapleader = " "
@@ -149,14 +155,14 @@ let g:gitgutter_git_executable = 'C:\Users\mateo\scoop\shims\git.exe'
 let g:gitgutter_map_keys = 0
 
 " Syntastic configs
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
 " FZF configs
 nmap <silent> <leader>fz :Files <CR>
@@ -182,18 +188,6 @@ autocmd CompleteDone * if !pumvisible() | pclose | endif
 nmap <silent> <leader>gK <Plug>(kite-docs)
 
 " Coc configs
-set hidden
-
-" Some servers have issues with backup files, see #649.
-set nobackup
-set nowritebackup
-
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-set updatetime=300
-
-" Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
-
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
@@ -314,7 +308,7 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings for CoCList
 " Show all diagnostics.
