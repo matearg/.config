@@ -112,7 +112,13 @@ nmap <leader>x :x <CR>
 " Theme configs
 set termguicolors
 set background=dark
-colorscheme tokyonight
+" Here are some specific-theme configs
+let g:dracula_italic = 0
+let g:tokyonight_disable_italic_comment = 1
+let g:gruvbox_material_disable_italic_comment = 1
+let g:gruvbox_material_background = 'hard'
+" Change the colorscheme
+colorscheme gruvbox-material
 
 " Ligthline configs
 " let g:lightline = {
@@ -137,7 +143,7 @@ colorscheme tokyonight
 
 " Airline configs
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='tokyonight'
+let g:airline_theme='gruvbox_material'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#clock#auto = 1
 let g:airline#extensions#clock#format = '%H:%M'
