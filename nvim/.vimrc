@@ -23,6 +23,7 @@ Plug 'dracula/vim', {'name':'dracula'}
 Plug 'morhetz/gruvbox'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'sainnhe/gruvbox-material'
+Plug 'ghifarit53/tokyonight-vim'
 
 " Other plugins
 Plug 'christoomey/vim-tmux-navigator'
@@ -111,7 +112,7 @@ nmap <leader>x :x <CR>
 " Theme configs
 set termguicolors
 set background=dark
-colorscheme palenight
+colorscheme tokyonight
 
 " Ligthline configs
 " let g:lightline = {
@@ -136,7 +137,7 @@ colorscheme palenight
 
 " Airline configs
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='palenight'
+let g:airline_theme='tokyonight'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#clock#auto = 1
 let g:airline#extensions#clock#format = '%H:%M'
