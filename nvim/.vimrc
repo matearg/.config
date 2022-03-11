@@ -31,6 +31,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/vim-emoji'
+Plug 'glepnir/dashboard-nvim'
 
 " Git integrations
 Plug 'itchyny/vim-gitbranch'
@@ -101,6 +102,7 @@ set nocompatible   " Disable vim compatibility
 
 let mapleader = " "
 let python_highlight_all = 1
+let g:dashboard_default_executive = 'fzf'
 
 " Mappings
 imap jk <Esc>
@@ -112,15 +114,20 @@ nmap <leader>x :x <CR>
 " Theme configs
 set termguicolors
 set background=dark
+
 " Here are some specific-theme configs
-let g:indentLine_char = '│'
 let g:dracula_italic = 0
 let g:tokyonight_disable_italic_comment = 1
 let g:tokyonight_style = 'night' " available: night, storm
 let g:gruvbox_material_disable_italic_comment = 1
 let g:gruvbox_material_background = 'hard'
+
 " Change the colorscheme
 colorscheme tokyonight
+
+" indentLine configs
+let g:indentLine_char = '│'
+let g:indentLine_fileTypeExclude = ['dashboard', 'help', 'fzf']
 
 " Ligthline configs
 " let g:lightline = {
