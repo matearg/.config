@@ -126,7 +126,7 @@ let g:gruvbox_material_background = 'hard'
 colorscheme tokyonight
 
 " indentLine configs
-let g:indentLine_char = '┆'
+let g:indentLine_char = '|'
 let g:indentLine_fileTypeExclude = ['dashboard', 'help', 'fzf', 'floaterm']
 
 " Ligthline configs
