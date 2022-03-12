@@ -60,8 +60,8 @@ Plug 'kiteco/vim-plugin'
 Plug 'github/copilot.vim'
 
 " Statusline
-" Plug 'maximbaz/lightline-ale'
-" Plug 'itchyny/lightline.vim'
+"Plug 'maximbaz/lightline-ale'
+"Plug 'itchyny/lightline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'enricobacis/vim-airline-clock'
@@ -130,25 +130,25 @@ let g:indentLine_char = '|'
 let g:indentLine_fileTypeExclude = ['dashboard', 'help', 'fzf', 'floaterm']
 
 " Ligthline configs
-" let g:lightline = {
-"       \ 'colorscheme': 'palenight',
-"       \ 'active': {
-"       \   'left': [ [ 'mode', 'paste' ],
-"       \             [ 'absolutepath', 'readonly', 'githunks', 'gitbranch' ] ]
-"       \ },
-"       \ 'component_function': {
-"       \   'gitbranch': 'FugitiveHead',
-"       \   'githunks': 'LightlineGitGutter'
-"       \ },
-"       \ }
-" 
-" function! LightlineGitGutter()
-"   if !get(g:, 'gitgutter_enabled', 0) || empty(FugitiveHead())
-"     return ''
-"   endif
-"   let [ l:added, l:modified, l:removed ] = GitGutterGetHunkSummary()
-"   return printf('+%d ~%d -%d', l:added, l:modified, l:removed)
-" endfunction
+"let g:lightline = {
+"      \ 'colorscheme': 'palenight',
+"      \ 'active': {
+"      \   'left': [ [ 'mode', 'paste' ],
+"      \             [ 'absolutepath', 'readonly', 'githunks', 'gitbranch' ] ]
+"      \ },
+"      \ 'component_function': {
+"      \   'gitbranch': 'FugitiveHead',
+"      \   'githunks': 'LightlineGitGutter'
+"      \ },
+"      \ }
+"
+"function! LightlineGitGutter()
+"  if !get(g:, 'gitgutter_enabled', 0) || empty(FugitiveHead())
+"    return ''
+"  endif
+"  let [ l:added, l:modified, l:removed ] = GitGutterGetHunkSummary()
+"  return printf('+%d ~%d -%d', l:added, l:modified, l:removed)
+"endfunction
 
 " Airline configs
 let g:airline#extensions#tabline#enabled = 1
@@ -179,9 +179,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 " FZF configs
 nmap <silent> <leader>fz :Files <CR>
