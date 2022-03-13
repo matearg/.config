@@ -127,7 +127,7 @@ let g:gruvbox_material_enable_bold = 1
 let g:gruvbox_material_background = 'hard'
 
 " Change the colorscheme
-colorscheme gruvbox-material
+colorscheme tokyonight
 
 " indentLine configs
 let g:indentLine_char = '|'
@@ -156,7 +156,7 @@ let g:indentLine_fileTypeExclude = ['dashboard', 'help', 'fzf', 'floaterm']
 
 " Airline configs
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='gruvbox_material'
+let g:airline_theme='tokyonight'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#clock#auto = 1
 let g:airline#extensions#clock#format = '%H:%M'
