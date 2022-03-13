@@ -24,7 +24,7 @@ scoop update
 scoop install bat gcc less neofetch neovim notepadplusplus oh-my-posh starship sudo
 ```
 
-2. Clone this repo `git clone https://github.com/matearg/dotfiles.git`
+2. Clone this repo `git clone https://github.com/matearg/dotfiles.git` into your home directory
 
 3. Move /dotfiles content to ~/.config
 
