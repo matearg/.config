@@ -24,7 +24,9 @@ scoop update
 scoop install bat gcc less neofetch neovim notepadplusplus oh-my-posh starship sudo
 ```
 
-2. Move /dotfiles content to ~/.config
+2. Clone this repo `git clone https://github.com/matearg/dotfiles.git`
+
+3. Move /dotfiles content to ~/.config
 
 > For nvim:
 
