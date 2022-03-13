@@ -1,6 +1,6 @@
 # dotfiles
 
-## __Requirements__
+## Requirements
 * [Scoop](https://scoop.sh/)
 * [Powershell 7.+](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2)
 * [Neofetch](https://github.com/dylanaraps/neofetch)
@@ -15,7 +15,7 @@
 
 > For nvim:
 
-* In Windows:
+* __In Windows:__
 
 Before moving /nvim to your ~/.config:
 
