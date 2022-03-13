@@ -3,17 +3,16 @@
 ## Requirements
 * [Windows Terminal Preview](https://github.com/microsoft/terminal)
 * [Powershell 7.+](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2)
+* [PSReadLine](https://github.com/PowerShell/PSReadLine)
+* [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
+* [Posh-Git](https://github.com/dahlbyk/posh-git)
 * [Scoop](https://scoop.sh/)
 * [Nerd Fonts](https://www.nerdfonts.com)
-* [Neofetch](https://github.com/dylanaraps/neofetch)
 * [Starship](https://starship.rs/)
 * [Oh-My-Posh](ohmyposh.dev/)
-* [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
-* [PSReadLine](https://github.com/PowerShell/PSReadLine)
-* [Posh-Git](https://github.com/dahlbyk/posh-git)
+* [Neofetch](https://github.com/dylanaraps/neofetch)
 * [NodeJS](https://nodejs.org/es/)
 * [Kite](https://www.kite.com/)
-* [GitHub Compilot](https://copilot.github.com/)
 
 ## Setup:
 1. Install scoop and dependencies:
