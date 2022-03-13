@@ -13,6 +13,17 @@
 * [Kite](https://www.kite.com/)
 * [GitHub Compilot](https://copilot.github.com/)
 
+## Setup:
+* Install scoop and dependencies:
+
+```
+iwr -useb get.scoop.sh | iex
+scoop install git
+scoop bucket add extras
+scoop update
+scoop install bat gcc less neofetch neovim notepadplusplus oh-my-posh starship sudo
+```
+
 > For nvim:
 
 * In Windows:
