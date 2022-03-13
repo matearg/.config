@@ -22,7 +22,7 @@ iwr -useb get.scoop.sh | iex
 scoop install git
 scoop bucket add extras
 scoop update
-scoop install bat gcc less neofetch neovim notepadplusplus oh-my-posh starship sudo
+scoop install bat gcc less neofetch neovim oh-my-posh starship sudo
 ```
 
 2. Clone this repo `git clone https://github.com/matearg/dotfiles.git` into your home directory
@@ -49,3 +49,7 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.config/nvim/.vimrc
 ```
+
+### TODO
+* Create the same repository for GNU systems
+* Pass nvim configs to lua
