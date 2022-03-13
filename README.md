@@ -44,7 +44,7 @@ scoop install bat gcc less neofetch neovim oh-my-posh starship sudo
 
 > For nvim:
 
-Before moving ~/dotfiles/nvim to your ~/.config:
+5. Before moving ~/dotfiles/nvim to your ~/.config:
 
 ```
 mkdir ~/AppData/Local/nvim/
@@ -52,7 +52,7 @@ mkdir ~/AppData/Local/nvim/plugged
 ni ~/AppData/Local/nvim/init.vim
 ```
 
-Put this into ~/AppData/Local/nvim/init.vim:
+6. Put this into ~/AppData/Local/nvim/init.vim:
 
 ```
 " Import configs from ~/.config/nvim/.vimrc
@@ -60,6 +60,10 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.config/nvim/.vimrc
 ```
+
+7. Open nvim and wait until your plugins get installed. Close nvim
+8. Put `. $PROFILE` in the terminal to reload your powershell profile
+9. ENJOY!!
 
 ### TODO
 
