@@ -12,6 +12,7 @@
 * [NodeJS](https://nodejs.org/es/)
 * [Kite](https://www.kite.com/)
 * [GitHub Compilot](https://copilot.github.com/)
+* [Nerd Fonts](https://www.nerdfonts.com)
 
 ## Setup:
 1. Install scoop and dependencies:
