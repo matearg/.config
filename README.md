@@ -15,7 +15,7 @@
 
 > For nvim:
 
-* __In Windows:__
+* In Windows:
 
 Before moving /nvim to your ~/.config:
 
