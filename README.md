@@ -28,7 +28,7 @@ ni ~/AppData/Local/nvim/init.vim
 Put this into ~/AppData/Local/nvim/init.vim:
 
 ```
-" Import configs from ~/.vimrc
+" Import configs from ~/.config/nvim/.vimrc
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.config/nvim/.vimrc
