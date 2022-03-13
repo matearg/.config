@@ -14,7 +14,7 @@
 * [GitHub Compilot](https://copilot.github.com/)
 
 ## Setup:
-* Install scoop and dependencies:
+1. Install scoop and dependencies:
 
 ```
 iwr -useb get.scoop.sh | iex
@@ -23,6 +23,8 @@ scoop bucket add extras
 scoop update
 scoop install bat gcc less neofetch neovim notepadplusplus oh-my-posh starship sudo
 ```
+
+2. Move /dotfiles content to ~/.config
 
 > For nvim:
 
