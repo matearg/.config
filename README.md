@@ -1,6 +1,8 @@
 # .config
 > Here I will put all mi dotfiles :)
 
+>> For nvim:
+
 * In Windows:
 ```
 mkdir C:/Users/<username>/AppData/Local/nvim/
