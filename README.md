@@ -1,8 +1,10 @@
 # dotfiles
 
 ## Requirements
-* [Scoop](https://scoop.sh/)
+* [Windows Terminal Preview](https://github.com/microsoft/terminal)
 * [Powershell 7.+](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2)
+* [Scoop](https://scoop.sh/)
+* [Nerd Fonts](https://www.nerdfonts.com)
 * [Neofetch](https://github.com/dylanaraps/neofetch)
 * [Starship](https://starship.rs/)
 * [Oh-My-Posh](ohmyposh.dev/)
@@ -12,7 +14,6 @@
 * [NodeJS](https://nodejs.org/es/)
 * [Kite](https://www.kite.com/)
 * [GitHub Compilot](https://copilot.github.com/)
-* [Nerd Fonts](https://www.nerdfonts.com)
 
 ## Setup:
 1. Install scoop and dependencies:
