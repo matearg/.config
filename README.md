@@ -1,6 +1,11 @@
 # dotfiles
 
+> Window 10 only (for now)
+
 ## Requirements
+
+> Install in order
+
 * [Windows Terminal Preview](https://github.com/microsoft/terminal)
 * [Powershell 7.+](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2)
 * [PSReadLine](https://github.com/PowerShell/PSReadLine)
@@ -15,6 +20,7 @@
 * [Kite](https://www.kite.com/)
 
 ## Setup:
+
 1. Install scoop and dependencies:
 
 ```
@@ -51,5 +57,6 @@ source ~/.config/nvim/.vimrc
 ```
 
 ### TODO
+
 * Create the same repository for GNU systems
 * Pass nvim configs to lua
