@@ -62,7 +62,9 @@ source ~/.config/nvim/.vimrc
 ```
 
 7. Open nvim and wait until your plugins get installed. Close nvim
+
 8. Put `. $PROFILE` in the terminal to reload your powershell profile
+
 9. ENJOY!!
 
 ### TODO
