@@ -116,9 +116,11 @@ set background=dark
 " Here are some specific-theme configs
 " Dracula
 let g:dracula_italic = 0
+
 " Tokyonight
 let g:tokyonight_disable_italic_comment = 1
 let g:tokyonight_style = 'night' " available: night, storm
+
 " Gruvbox-material
 let g:gruvbox_material_disable_italic_comment = 1
 let g:gruvbox_material_enable_bold = 1
@@ -160,12 +162,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-
 " FZF configs
 nmap <silent> <leader>fz :Files <CR>
+nmap <silent> <leader>fh :History <CR>
 nmap <silent> <leader>fg :GFiles <CR>
 
 " Floaterm configs
