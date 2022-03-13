@@ -21,7 +21,14 @@
 
 ## Setup:
 
-1. Install scoop and dependencies:
+1. Put this into your `$PROFILE`
+
+```
+. $env:USERPROFILE\.config\powershell\user_profile.ps1
+$ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
+```
+
+2. Install scoop and dependencies:
 
 ```
 iwr -useb get.scoop.sh | iex
@@ -31,13 +38,11 @@ scoop update
 scoop install bat gcc less neofetch neovim oh-my-posh starship sudo
 ```
 
-2. Clone this repo `git clone https://github.com/matearg/dotfiles.git` into your home directory
+3. Clone this repo `git clone https://github.com/matearg/dotfiles.git` into your home directory
 
-3. Move ~/dotfiles content to ~/.config
+4. Move ~/dotfiles content to ~/.config
 
 > For nvim:
-
-* In Windows:
 
 Before moving ~/dotfiles/nvim to your ~/.config:
 
