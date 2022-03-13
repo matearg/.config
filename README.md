@@ -5,7 +5,7 @@
 
 * In Windows:
 
-Before moving nvim folder to your ~/.config folder:
+Before moving /nvim to your ~/.config:
 
 ```
 mkdir ~/AppData/Local/nvim/
