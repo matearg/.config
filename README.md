@@ -26,13 +26,13 @@ scoop install bat gcc less neofetch neovim notepadplusplus oh-my-posh starship s
 
 2. Clone this repo `git clone https://github.com/matearg/dotfiles.git` into your home directory
 
-3. Move /dotfiles content to ~/.config
+3. Move ~/dotfiles content to ~/.config
 
 > For nvim:
 
 * In Windows:
 
-Before moving /nvim to your ~/.config:
+Before moving ~/dotfiles/nvim to your ~/.config:
 
 ```
 mkdir ~/AppData/Local/nvim/
