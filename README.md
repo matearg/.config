@@ -44,7 +44,7 @@ scoop install bat gcc less neofetch neovim oh-my-posh starship sudo
 
 > For nvim:
 
-5. Before moving ~/dotfiles/nvim to your ~/.config:
+5. After moving ~/dotfiles/nvim to your ~/.config:
 
 ```
 mkdir ~/AppData/Local/nvim/
