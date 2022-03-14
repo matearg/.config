@@ -53,6 +53,7 @@ Plug 'vim-python/python-syntax'
 Plug 'ap/vim-css-color'
 Plug 'sheerun/vim-polyglot'
 Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-commentary'
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
