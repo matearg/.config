@@ -69,5 +69,5 @@ source ~/.config/nvim/.vimrc
 
 ### TODO
 
-* Create the same repository for GNU systems
-* Pass nvim configs to lua
+- Create the same repository for GNU systems
+- Pass nvim configs to lua
