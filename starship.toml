@@ -6,16 +6,16 @@ add_newline = false
 disabled = true
 
 # Shows the time
-# [time]
-# disabled = false
-# format = '[\[$time\]]($style) '
-# time_format = "%d-%b-%y %R"
+[time]
+format = '[\[$time\]]($style) '
+time_format = "%d-%b-%y %R"
+disabled = true
 
 # Shows the shows the current user name
 [username]
 format = "[$user](bold yellow)"
-disabled = false
 show_always = true
+disabled = false
 
 # Shows the current host name
 [hostname]
@@ -26,15 +26,13 @@ disabled = false
 
 # Shows the current directory
 [directory]
+style = "purple"
 truncation_length = 1
 truncation_symbol = ""
+disabled = false
 
-# Replace the "❯" symbol in the prompt
+# Replace the "❯" symbol in the prompt with "✗" or "❯❯❯"
 [character]
 success_symbol = "[✗](bold white)"
 error_symbol = "[✗](bold red)"
-
-# After puting the line_break in false unconmment this
-# [character]
-# success_symbol = "[❯❯❯](bold green)"
-# error_symbol = "[❯❯❯](bold red)"
+disabled = false
