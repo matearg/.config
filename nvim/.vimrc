@@ -116,9 +116,11 @@ set background=dark
 " Here are some specific-theme configs
 " Dracula
 let g:dracula_italic = 0
+
 " Tokyonight
 let g:tokyonight_disable_italic_comment = 1
 let g:tokyonight_style = 'night' " available: night, storm
+
 " Gruvbox-material
 let g:gruvbox_material_disable_italic_comment = 1
 let g:gruvbox_material_enable_bold = 1
