@@ -11,13 +11,10 @@
 - [PSReadLine](https://github.com/PowerShell/PSReadLine)
 - [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
 - [Posh-Git](https://github.com/dahlbyk/posh-git)
-- [Scoop](https://scoop.sh/)
 - [Nerd Fonts](https://www.nerdfonts.com)
-- [Starship](https://starship.rs/)
-- [Oh-My-Posh](ohmyposh.dev/)
-- [Neofetch](https://github.com/dylanaraps/neofetch)
 - [NodeJS](https://nodejs.org/es/)
 - [Kite](https://www.kite.com/)
+- [Scoop](https://scoop.sh/)
 
 ## Setup:
 
@@ -48,7 +45,6 @@ scoop install bat gcc less neofetch neovim oh-my-posh starship sudo
 
 ```
 mkdir ~/AppData/Local/nvim/
-mkdir ~/AppData/Local/nvim/plugged
 ni ~/AppData/Local/nvim/init.vim
 ```
 
@@ -58,7 +54,7 @@ ni ~/AppData/Local/nvim/init.vim
 " Import configs from ~/.config/nvim/.vimrc
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
-source ~/.config/nvim/.vimrc
+source ~/.config/nvim/init.vim
 ```
 
 7. Open nvim and wait until your plugins get installed. Close nvim
