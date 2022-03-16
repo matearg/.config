@@ -3,8 +3,8 @@
 
 # Imported Modules
 Import-Module Terminal-Icons
-Import-Module posh-git
-Import-Module PSReadLine
+# Import-Module posh-git
+# Import-Module PSReadLine
 
 # Alias
 Set-Alias ll ls
@@ -16,9 +16,9 @@ Set-Alias v nvim
 Set-Alias vim nvim
 
 # PSReadLine
-Set-PSReadLineOption -PredictionSource HistoryAndPlugin
-Set-PSReadLineOption -EditMode Windows
-Set-PSReadLineOption -PredictionViewStyle ListView
+# Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+# Set-PSReadLineOption -EditMode Windows
+# Set-PSReadLineOption -PredictionViewStyle ListView
 
 # Prompt
 Clear-Host
