@@ -26,7 +26,7 @@ disabled = false
 
 # Shows the current directory
 [directory]
-style = "purple"
+style = "cyan"
 truncation_length = 1
 truncation_symbol = ""
 disabled = false
