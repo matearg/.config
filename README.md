@@ -16,18 +16,18 @@
 - [Kite](https://www.kite.com/)
 - [Scoop](https://scoop.sh/)
 
-## Setup:
+## Setup
 
 1. Put this into your `$PROFILE`
 
-```
+```ps1
 . $env:USERPROFILE\.config\powershell\user_profile.ps1
 $ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
 ```
 
 2. Install scoop and dependencies:
 
-```
+```sh
 iwr -useb get.scoop.sh | iex
 scoop install git
 scoop bucket add extras
@@ -43,14 +43,14 @@ scoop install bat gcc less neofetch neovim oh-my-posh starship sudo
 
 5. After copying ~/dotfiles/nvim to your ~/.config:
 
-```
+```sh
 mkdir ~/AppData/Local/nvim/
 ni ~/AppData/Local/nvim/init.vim
 ```
 
 6. Put this into ~/AppData/Local/nvim/init.vim:
 
-```
+```vimscript
 " Import configs from ~/.config/nvim/init.vim
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
