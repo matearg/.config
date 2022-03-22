@@ -135,7 +135,7 @@ let g:gruvbox_material_enable_bold = 1
 let g:gruvbox_material_background = 'hard'
 
 " Change the colorscheme
-colorscheme tokyonight
+colorscheme dracula
 
 " IndentLine configs
 let g:indentLine_char = '▏'
@@ -143,7 +143,7 @@ let g:indentLine_fileTypeExclude = ['dashboard', 'help', 'fzf', 'floaterm']
 
 " Airline configs
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='tokyonight'
+let g:airline_theme='dracula'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#clock#auto = 1
 let g:airline#extensions#clock#format = '%H:%M'
@@ -151,7 +151,7 @@ let g:airline#extensions#clock#updatetime = 1000
 
 " Nerd Tree configs
 nmap <silent> <leader>nf :NERDTreeFind <CR>
-nmap <silent> <leader>e :NERDTreeToggle <CR>
+nmap <silent> <leader>nt :NERDTreeToggle <CR>
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeFileExtensionHighlightFullName = 1
@@ -183,7 +183,7 @@ let g:dashboard_default_executive = 'fzf'
 
 " Floaterm configs
 let g:floaterm_shell='"C:\Users\mateo\AppData\Local\Microsoft\WindowsApps\Microsoft.PowerShell_8wekyb3d8bbwe\pwsh.exe" -nologo'
-nmap <silent> <leader>te :FloatermToggle <CR>
+nmap <silent> <leader>tf :FloatermToggle <CR>
 
 " Kite configs
 " All the languages Kite supports
