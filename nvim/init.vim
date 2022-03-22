@@ -102,12 +102,15 @@ set splitright   " Split buffers to the right
 set splitbelow   " Split buffers below
 set emoji   " Enable emojis
 set lazyredraw   " Dont redraw the whole screen
+set nohlsearch   " highlight matches
+set incsearch   " incremental searching
+set ignorecase   " searches are case insensitive...
+set smartcase   " ... unless they contain at least one capital letter Basic configurations
 
-let mapleader = " "
-let python_highlight_all = 1
 let g:dashboard_default_executive = 'fzf'
 
 " Mappings
+let mapleader = " "
 imap jk <Esc>
 nmap <leader>w :w <CR>
 nmap <leader>q :q <CR>
@@ -134,7 +137,7 @@ let g:gruvbox_material_background = 'hard'
 " Change the colorscheme
 colorscheme tokyonight
 
-" indentLine configs
+" IndentLine configs
 let g:indentLine_char = '▏'
 let g:indentLine_fileTypeExclude = ['dashboard', 'help', 'fzf', 'floaterm']
 
@@ -149,7 +152,6 @@ let g:airline#extensions#clock#updatetime = 1000
 " Nerd Tree configs
 nmap <silent> <leader>nf :NERDTreeFind <CR>
 nmap <silent> <leader>e :NERDTreeToggle <CR>
- 
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeFileExtensionHighlightFullName = 1
@@ -173,15 +175,15 @@ nmap <silent> <leader>ff :Files <CR>
 nmap <silent> <leader>fh :History <CR>
 nmap <silent> <leader>fg :GFiles <CR>
 
+" Polyglot configs
+let python_highlight_all = 1
+
+" Dashboard configs
+let g:dashboard_default_executive = 'fzf'
+
 " Floaterm configs
 let g:floaterm_shell='"C:\Users\mateo\AppData\Local\Microsoft\WindowsApps\Microsoft.PowerShell_8wekyb3d8bbwe\pwsh.exe" -nologo'
 nmap <silent> <leader>te :FloatermToggle <CR>
-
-" Searching
-set nohlsearch                    " highlight matches
-set incsearch                   " incremental searching
-set ignorecase                  " searches are case insensitive...
-set smartcase                   " ... unless they contain at least one capital letter Basic configurations
 
 " Kite configs
 " All the languages Kite supports
