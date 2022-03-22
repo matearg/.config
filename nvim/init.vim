@@ -86,6 +86,7 @@ set autoindent   " Autoindent
 set laststatus=2   " Show status bar
 set noshowmode   " Disable showmode
 set scrolloff=8   " Set scrolloff to 8
+set sidescrolloff=8   " Set sidescrolloff to 8
 set nowrap   " Disable wrapping
 set cursorline   " Highlight current line
 set cmdheight=2   " Set cmdheight to 2
@@ -93,11 +94,14 @@ set signcolumn=auto   " Show signs in the right side of the screen
 set noswapfile   " Disable swapfile
 set hidden   " Hide buffers but let them open
 set nobackup   " Disable backup files
-set noswapfile   " Disable swapfile
 set nowritebackup   " Disable writebackup
 set updatetime=300   " Set update time to 300ms
 set shortmess+=c   " Show messages in the status line
 set nocompatible   " Disable vim compatibility
+set splitright   " Split buffers to the right
+set splitbelow   " Split buffers below
+set emoji   " Enable emojis
+set lazyredraw   " Dont redraw the whole screen
 
 let mapleader = " "
 let python_highlight_all = 1
