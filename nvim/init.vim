@@ -144,7 +144,7 @@ let g:airline#extensions#clock#updatetime = 1000
 
 " Nerd Tree configs
 nmap <silent> <leader>nf :NERDTreeFind <CR>
-nmap <silent> <leader>nt :NERDTreeToggle <CR>
+nmap <silent> <leader>e :NERDTreeToggle <CR>
  
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
