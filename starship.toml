@@ -27,11 +27,12 @@ disabled = false
 # Shows the current directory
 [directory]
 style = "cyan"
-truncation_length = 1
-truncation_symbol = ""
+truncate_to_repo = true
+truncation_length = 0
+truncation_symbol = "repo: "
 disabled = false
 
-# Replace the "❯" symbol in the prompt with "✗" or "❯❯❯"
+# Replace the "❯" symbol in the prompt with "✗" or "❯❯❯" or "×" or "λ"
 [character]
 success_symbol = "[✗](bold white)"
 error_symbol = "[✗](bold red)"
