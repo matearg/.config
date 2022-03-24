@@ -18,11 +18,11 @@ Set-Alias vim nvim
 # PSReadLine
 # Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 # Set-PSReadLineOption -EditMode Windows
-# Set-PSReadLineOption -PredictionViewStyle ListView
+# Set-PSReadLineOption -PredictionViewStyle InLineView
 
 # Prompt
 Clear-Host
 # neofetch
 Invoke-Expression (&starship init powershell)
-# oh-my-posh --init --shell pwsh --config ~\.config\powershell\takuya.omp.json | Invoke-Expression
-# oh-my-posh --init --shell pwsh --config ~\scoop\apps\oh-my-posh\current\themes\atomicBit.omp.json | Invoke-Expression
+# oh-my-posh --init --shell pwsh --config ~\.config\powershell\mytheme.omp.json | Invoke-Expression
+# oh-my-posh --init --shell pwsh --config ~\scoop\apps\oh-my-posh\current\themes\half-life.omp.json | Invoke-Expression
