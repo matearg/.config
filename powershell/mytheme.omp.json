@@ -6,7 +6,7 @@
       "segments": [
         {
           "background": "transparent",
-          "foreground": "#FFEE58",
+          "foreground": "yellow",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "template": " \uf0e7 "
@@ -43,7 +43,7 @@
             "{{ if gt .Behind 0 }}#c5b6ad{{ end }}",
             "{{ if .UpstreamGone }}#d1c7b7{{ end }}"
           ],
-          "foreground": "#fffffb",
+          "foreground": "white",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "azure_devops_icon": "\ufd03 ",
@@ -56,9 +56,9 @@
             "fetch_status": true,
             "fetch_upstream_icon": true,
             "fetch_worktree_count": true,
-            "git_icon": "\uf1d3 ",
-            "github_icon": "\uf408 ",
-            "gitlab_icon": "\uf296 ",
+            "git_icon": "\uf1d3",
+            "github_icon": "\uf408",
+            "gitlab_icon": "\uf296",
             "tag_icon": "\uf412 ",
             "template": " {{ if( .UpstreamIcon ) }}{{ url .UpstreamIcon .UpstreamURL }} {{ end }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{.Working.String}}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{.Staging.String}}{{ end }}{{ if gt .StashCount 0 }}  \uf692 {{.StashCount}}{{ end }}{{ if gt .WorktreeCount 0 }}{{if .IsWorkTree}}{{ end }}  \uf1bb {{if .IsWorkTree}}{{ end }}{{.WorktreeCount}}{{ end }} "
           },
@@ -66,8 +66,8 @@
           "type": "git"
         },
         {
-          "background": "#906cff",
-          "foreground": "#100e23",
+          "background": "magenta",
+          "foreground": "black",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
@@ -76,11 +76,11 @@
           "type": "python"
         },
         {
-          "background": "#ff8080",
-          "foreground": "#ffffff",
+          "background": "red",
+          "foreground": "white",
           "powerline_symbol": "\ue0b0",
           "properties": {
-            "template": " *_* "
+            "template": " ✗ "
           },
           "style": "powerline",
           "type": "exit"
