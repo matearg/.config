@@ -3,7 +3,6 @@
 
 # Imported Modules
 Import-Module Terminal-Icons
-Import-Module posh-git
 Import-Module PSReadLine
 
 # Alias
