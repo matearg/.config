@@ -8,19 +8,15 @@
           "background": "transparent",
           "foreground": "yellow",
           "powerline_symbol": "\ue0b0",
-          "properties": {
-            "template": " \uf0e7 "
-          },
           "style": "powerline",
+          "template": " \uf0e7 ",
           "type": "root"
         },
         {
           "background": "darkGray",
           "foreground": "white",
-          "properties": {
-            "template": " {{ .UserName }}@{{ .HostName }} "
-          },
           "style": "diamond",
+          "template": " {{ .UserName }}@{{ .HostName }} ",
           "type": "session"
         },
         {
@@ -28,13 +24,13 @@
           "foreground": "white",
           "powerline_symbol": "\ue0b0",
           "properties": {
-            "style": "agnoster_short",
-            "template": " {{ path .Path .Location }} "
+            "style": "agnoster_short"
           },
           "style": "powerline",
+          "template": " {{ path .Path .Location }} ",
           "type": "path"
         },
-                {
+        {
           "background": "#353535",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#ff9248{{ end }}",
@@ -59,30 +55,26 @@
             "git_icon": "\uf1d3",
             "github_icon": "\uf408",
             "gitlab_icon": "\uf296",
-            "tag_icon": "\uf412 ",
-            "template": " {{ if( .UpstreamIcon ) }}{{ url .UpstreamIcon .UpstreamURL }} {{ end }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{.Working.String}}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{.Staging.String}}{{ end }}{{ if gt .StashCount 0 }}  \uf692 {{.StashCount}}{{ end }}{{ if gt .WorktreeCount 0 }}{{if .IsWorkTree}}{{ end }}  \uf1bb {{if .IsWorkTree}}{{ end }}{{.WorktreeCount}}{{ end }} "
+            "tag_icon": "\uf412 "
           },
           "style": "powerline",
+          "template": " {{ if( .UpstreamIcon ) }}{{ url .UpstreamIcon .UpstreamURL }} {{ end }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{.Working.String}}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{.Staging.String}}{{ end }}{{ if gt .StashCount 0 }}  \uf692 {{.StashCount}}{{ end }}{{ if gt .WorktreeCount 0 }}{{if .IsWorkTree}}{{ end }}  \uf1bb {{if .IsWorkTree}}{{ end }}{{.WorktreeCount}}{{ end }} ",
           "type": "git"
         },
         {
           "background": "magenta",
           "foreground": "black",
           "powerline_symbol": "\ue0b0",
-          "properties": {
-            "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
-          },
           "style": "powerline",
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
           "type": "python"
         },
         {
           "background": "red",
           "foreground": "white",
           "powerline_symbol": "\ue0b0",
-          "properties": {
-            "template": " ✗ "
-          },
           "style": "powerline",
+          "template": " \u2717 ",
           "type": "exit"
         }
       ],
@@ -90,5 +82,5 @@
     }
   ],
   "final_space": true,
-  "version": 1
+  "version": 2
 }
