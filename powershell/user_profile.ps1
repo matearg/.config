@@ -17,8 +17,11 @@ Set-PSReadLineOption -PredictionViewStyle List
 
 # Prompt
 Clear-Host
-# neofetch
+
+# Starship
 # Invoke-Expression (&starship init powershell)
+
+# Oh my Posh
 oh-my-posh --init --shell pwsh --config ~\.config\powershell\mytheme.omp.json | Invoke-Expression
 # oh-my-posh --init --shell pwsh --config ~\scoop\apps\oh-my-posh\current\themes\clean-detailed.omp.json | Invoke-Expression
 
