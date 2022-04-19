@@ -10,6 +10,7 @@ $git_status\
 $python\
 $nodejs\
 $lua\
+$c\
 $ruby\
 [](fg:#86BBD8 bg:#33658A)\
 $time\
@@ -68,6 +69,12 @@ format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 symbol = ""
 style = "bg:#86BBD8"
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[c]
+symbol = ""
+style = "bg:#86BBD8"
+format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
 
 [ruby]
 symbol = ""

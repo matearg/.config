@@ -103,3 +103,6 @@ symbol = "ﯣ "
 
 [lua]
 symbol = " "
+
+[c]
+symbol = " "
