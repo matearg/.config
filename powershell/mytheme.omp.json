@@ -62,12 +62,27 @@
           "type": "git"
         },
         {
-          "background": "magenta",
-          "foreground": "black",
+          "background": "#FFDE57",
+          "foreground": "#111111",
           "powerline_symbol": "\ue0b0",
+          "properties": {
+            "display_mode": "files",
+            "fetch_virtual_env": true
+          },
           "style": "powerline",
-          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "python"
+        },
+        {
+          "background": "#6CA35E",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "powerline",
+          "template": " \uf898 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+          "type": "node"
         },
         {
           "background": "red",
@@ -81,6 +96,7 @@
       "type": "prompt"
     }
   ],
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "final_space": true,
   "version": 2
 }

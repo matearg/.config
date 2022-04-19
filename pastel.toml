@@ -7,8 +7,10 @@ $directory\
 $git_branch\
 $git_status\
 [](fg:#FCA17D bg:#86BBD8)\
+$python\
 $nodejs\
-$rust\
+$lua\
+$ruby\
 [](fg:#86BBD8 bg:#33658A)\
 $time\
 [ ](fg:#33658A)\
@@ -52,13 +54,23 @@ format = '[[ $symbol $branch ](bg:#FCA17D)]($style)'
 style = "bg:#FCA17D"
 format = '[[($all_status$ahead_behind )](bg:#FCA17D)]($style)'
 
+[python]
+symbol = ""
+style = "bg:#86BBD8"
+format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
 [nodejs]
 symbol = ""
 style = "bg:#86BBD8"
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 
-[rust]
-symbol = ""
+[lua]
+symbol = ""
+style = "bg:#86BBD8"
+format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[ruby]
+symbol = ""
 style = "bg:#86BBD8"
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 
