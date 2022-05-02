@@ -2,8 +2,9 @@
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding 
 
 # Imported Modules
-Import-Module Terminal-Icons
-Import-Module PSReadLine
+Import-Module -Name Terminal-Icons
+Import-Module -Name PSReadLine
+Import-Module -Name posh-git
 
 # Alias
 Set-Alias ll ls
