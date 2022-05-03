@@ -107,8 +107,6 @@ set incsearch   " incremental searching
 set ignorecase   " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter Basic configurations
 
-let g:dashboard_default_executive = 'fzf'
-
 " Mappings
 let mapleader = " "
 imap jk <Esc>
