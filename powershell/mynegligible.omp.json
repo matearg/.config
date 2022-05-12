@@ -13,7 +13,7 @@
         {
           "foreground": "cyan",
           "properties": {
-            "style": "full"
+            "style": "letter"
           },
           "style": "plain",
           "template": " {{ .Path }} ",
