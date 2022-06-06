@@ -133,7 +133,7 @@ let g:gruvbox_material_enable_bold = 1
 let g:gruvbox_material_background = 'hard'
 
 " Change the colorscheme
-colorscheme dracula
+colorscheme onedark
 
 " IndentLine configs
 let g:indentLine_char = '▏'
@@ -148,8 +148,8 @@ let g:airline#extensions#clock#format = '%H:%M'
 let g:airline#extensions#clock#updatetime = 1000
 
 " Nerd Tree configs
-nmap <silent> <leader>nf :NERDTreeFind <CR>
-nmap <silent> <leader>nt :NERDTreeToggle <CR>
+nmap <silent> <leader>ef :NERDTreeFind <CR>
+nmap <silent> <leader>e :NERDTreeToggle <CR>
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeFileExtensionHighlightFullName = 1
