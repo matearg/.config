@@ -141,15 +141,15 @@ let g:indentLine_fileTypeExclude = ['dashboard', 'help', 'fzf', 'floaterm']
 
 " Airline configs
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='dracula'
+let g:airline_theme='onedark'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#clock#auto = 1
 let g:airline#extensions#clock#format = '%H:%M'
 let g:airline#extensions#clock#updatetime = 1000
 
 " Nerd Tree configs
-nmap <silent> <leader>ef :NERDTreeFind <CR>
-nmap <silent> <leader>e :NERDTreeToggle <CR>
+nmap <silent> <leader>nf :NERDTreeFind <CR>
+nmap <silent> <leader>nt :NERDTreeToggle <CR>
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 let g:NERDTreeFileExtensionHighlightFullName = 1
