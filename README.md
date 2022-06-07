@@ -62,9 +62,11 @@ source ~/github/dotfiles/nvim/init.vim
 
 7. Open nvim and wait until your plugins get installed. Close nvim
 
-8. Put `. $PROFILE` in the terminal to reload your powershell profile
+8. Reopen nvim and run `:CocInstall coc-prettier coc-html coc-highlight coc-tsserver coc-pyright coc-markdownlint coc-lua coc-json coc-css coc-clangd`
 
-9. ENJOY!!
+9. Run `. $PROFILE` in the terminal to reload your powershell profile
+
+10. ENJOY!!
 
 ### TODO
 
