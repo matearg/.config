@@ -29,6 +29,7 @@ $ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
 
 ```sh
 iwr -useb get.scoop.sh | iex
+scoop bucket add main
 scoop install git
 scoop bucket add extras
 scoop update
