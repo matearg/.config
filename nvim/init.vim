@@ -7,11 +7,18 @@
 "  /$$\  $/   | $$| $$ | $$ | $$| $$      |  $$$$$$$
 " |__/ \_/    |__/|__/ |__/ |__/|__/       \_______/
 
+" User configs
 source ~/github/dotfiles/nvim/settings/user/configs.vim
-source ~/github/dotfiles/nvim/settings/user/keybinds.vim
+source ~/github/dotfiles/nvim/settings/user/keybinds.lua
+
+" Vimplug configs
 source ~/github/dotfiles/nvim/settings/plugins/plugins.vim
-source ~/github/dotfiles/nvim/settings/colors/color-configs.vim
+
+" Colorscheme configs
+source ~/github/dotfiles/nvim/settings/colors/color-configs.lua
 source ~/github/dotfiles/nvim/settings/colors/colorscheme.vim
+
+" Plugins configs
 source ~/github/dotfiles/nvim/settings/plugins/configs/alpha.lua
 source ~/github/dotfiles/nvim/settings/plugins/configs/bufferline.lua
 source ~/github/dotfiles/nvim/settings/plugins/configs/coc.vim

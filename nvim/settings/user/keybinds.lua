@@ -1,6 +1,4 @@
-" Mappings
-lua << EOF
-
+-- Mappings
 local opts = { noremap = true, silent = true }
 
 local term_opts = { silent = true }
@@ -37,5 +35,3 @@ keymap("i", "jk", "<ESC>", opts)
 
 keymap("n", "<leader>w", ":w<CR>", opts)
 keymap("n", "<leader>q", ":q<CR>", opts)
-
-EOF

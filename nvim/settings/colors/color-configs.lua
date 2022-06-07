@@ -1,5 +1,4 @@
-" Specific-theme configs
-lua << EOF
+-- Specific-theme configs
 -- OneDark
 
 require('onedark').setup  {
@@ -19,4 +18,3 @@ require('onedark').setup  {
     },
 }
 
-EOF
