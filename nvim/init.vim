@@ -140,6 +140,7 @@ let g:onedark_hide_endofbuffer = 1
 
 " Change the colorscheme
 colorscheme onedark
+hi Normal guibg=NONE ctermbg=NONE
 
 " IndentLine configs
 let g:indentLine_char = '▏'
@@ -148,7 +149,7 @@ let g:indentLine_fileTypeExclude = ['dashboard', 'help', 'fzf', 'floaterm']
 " Airline configs
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='onedark'
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 let g:airline#extensions#clock#auto = 1
 let g:airline#extensions#clock#format = '%H:%M'
 let g:airline#extensions#clock#updatetime = 1000
