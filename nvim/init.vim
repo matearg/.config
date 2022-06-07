@@ -19,14 +19,8 @@ call plug#begin('~/.config/nvim/plugins')
 
 " Themes
 Plug 'joshdick/onedark.vim'
-Plug 'dracula/vim', {'name':'dracula'}
-Plug 'morhetz/gruvbox'
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'sainnhe/gruvbox-material'
-Plug 'ghifarit53/tokyonight-vim'
 
 " Other plugins
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'voldikss/vim-floaterm'
@@ -58,7 +52,7 @@ Plug 'tpope/vim-commentary'
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'kiteco/vim-plugin'
-Plug 'github/copilot.vim'
+" Plug 'github/copilot.vim'
 
 " Statusline
 Plug 'vim-airline/vim-airline'
@@ -110,12 +104,44 @@ set lazyredraw   " Dont redraw the whole screen
 set colorcolumn=81
 
 " Mappings
-let mapleader = " "
-imap jk <Esc>
-nmap <leader>w :w <CR>
-nmap <leader>q :q <CR>
-nmap <leader>qa :qa <CR>
-nmap <leader>x :x <CR>
+lua << EOF
+
+local opts = { noremap = true, silent = true }
+
+local term_opts = { silent = true }
+
+-- Shorten function name
+local keymap = vim.api.nvim_set_keymap
+
+-- Remap space as leader key
+keymap("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+-- Better window navigation
+keymap("n", "<C-h>", "<C-w>h", opts)
+keymap("n", "<C-j>", "<C-w>j", opts)
+keymap("n", "<C-k>", "<C-w>k", opts)
+keymap("n", "<C-l>", "<C-w>l", opts)
+
+-- Resize with arrows
+keymap("n", "<C-Up>", ":resize +2<CR>", opts)
+keymap("n", "<C-Down>", ":resize -2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+
+-- Navigate buffers
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
+
+-- Insert --
+-- Press jk fast to enter
+keymap("i", "jk", "<ESC>", opts)
+
+keymap("n", "<leader>w", ":w<CR>", opts)
+keymap("n", "<leader>q", ":q<CR>", opts)
+
+EOF
 
 " Theme configs
 set termguicolors
