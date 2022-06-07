@@ -18,7 +18,7 @@ endif
 call plug#begin('~/.config/nvim/plugins')
 
 " Themes
-Plug 'joshdick/onedark.vim'
+Plug 'navarasu/onedark.nvim'
 
 " Other plugins
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -161,12 +161,33 @@ let g:gruvbox_material_enable_bold = 1
 let g:gruvbox_material_background = 'hard'
 
 " Onedark
-let g:onedark_terminal_italics = 0
-let g:onedark_hide_endofbuffer = 1
+" let g:onedark_terminal_italics = 0
+" let g:onedark_hide_endofbuffer = 1
+
+lua << EOF
+-- OneDark
+
+require('onedark').setup  {
+    style = 'darker', -- Chose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'
+    transparent = true,
+    code_style = {
+        comments = 'none',
+        keywords = 'none',
+        functions = 'none',
+        strings = 'none',
+        variables = 'none'
+    },
+    diagnostics = {
+        darker = true,
+        undercurl = true,
+        background = true,
+    },
+}
+
+EOF
 
 " Change the colorscheme
 colorscheme onedark
-hi Normal guibg=NONE ctermbg=NONE
 
 " IndentLine configs
 let g:indentLine_char = '▏'
