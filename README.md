@@ -35,13 +35,15 @@ scoop update
 scoop install bat gcc less neofetch neovim oh-my-posh starship sudo
 ```
 
-3. Clone this repo `git clone https://github.com/matearg/dotfiles.git` into your home directory
+3. ```sh
+   mkdir ~/github
+   ```
 
-4. Copy ~/dotfiles content to ~/.config
+4. Clone this repo `git clone https://github.com/matearg/dotfiles.git` into ~/github
 
 > For nvim:
 
-5. After copying ~/dotfiles/nvim to your ~/.config:
+5. After that:
 
 ```sh
 mkdir ~/AppData/Local/nvim/
@@ -51,10 +53,10 @@ ni ~/AppData/Local/nvim/init.vim
 6. Put this into ~/AppData/Local/nvim/init.vim:
 
 ```vimscript
-" Import configs from ~/.config/nvim/init.vim
+" Import configs from ~/github/dotfiles/nvim/init.vim
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
-source ~/.config/nvim/init.vim
+source ~/github/dotfiles/nvim/init.vim
 ```
 
 7. Open nvim and wait until your plugins get installed. Close nvim
@@ -66,4 +68,3 @@ source ~/.config/nvim/init.vim
 ### TODO
 
 - Create the same repository for GNU systems
-- Pass nvim configs to lua
