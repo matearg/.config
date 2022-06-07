@@ -1,5 +1,4 @@
-" Nvim-Tree configs
-lua << EOF
+-- Nvim-Tree configs
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
 
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
@@ -148,4 +147,3 @@ nvim_tree.setup {
     },
   },
 }
-EOF
