@@ -12,11 +12,16 @@ call plug#begin('~/.config/nvim/plugins')
 Plug 'navarasu/onedark.nvim'
 
 " Other plugins
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/vim-emoji'
-Plug 'glepnir/dashboard-nvim'
+Plug 'goolord/alpha-nvim'
+Plug 'folke/which-key.nvim'
+Plug 'moll/vim-bbye'
+
+" Lua useful plugins
+Plug 'nvim-lua/popup.nvim'  " An implementation of the Popup API from vim in Neovim
+Plug 'nvim-lua/plenary.nvim'  " Useful lua functions used ny lots of plugins
 
 " Git integrations
 Plug 'itchyny/vim-gitbranch'
@@ -24,10 +29,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-signify'
 
-" File manage
-Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" File management
+Plug 'ahmedkhalf/project.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
 
 " IDE plugins
 Plug 'jiangmiao/auto-pairs'
@@ -37,16 +42,14 @@ Plug 'vim-syntastic/syntastic'
 Plug 'vim-python/python-syntax'
 Plug 'ap/vim-css-color'
 Plug 'sheerun/vim-polyglot'
-Plug 'Yggdroot/indentLine'
+Plug 'lukas-reineke/indent-blankline.nvim'  " Indentation with a blank line
 Plug 'tpope/vim-commentary'
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'github/copilot.vim'
 
-" Statusline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'enricobacis/vim-airline-clock'
+" Statuslines
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
 call plug#end()
