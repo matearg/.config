@@ -49,6 +49,7 @@ scoop install bat gcc less neofetch neovim oh-my-posh starship sudo
 ```sh
 mkdir ~/AppData/Local/nvim/
 ni ~/AppData/Local/nvim/init.vim
+ni ~/AppData/Local/nvim/coc-settings.json
 ```
 
 6. Put this into ~/AppData/Local/nvim/init.vim:
@@ -60,13 +61,26 @@ let &packpath = &runtimepath
 source ~/github/dotfiles/nvim/init.vim
 ```
 
-7. Open nvim and wait until your plugins get installed. Close nvim
+7. And this into ~/AppData/Local/nvim/coc-settings.json:
 
-8. Reopen nvim and run `CocInstall coc-prettier coc-html coc-highlight coc-tsserver coc-pyright coc-markdownlint coc-lua coc-json coc-css coc-clangd`
+```json
+{
+  "diagnostic.errorSign": "",
+  "diagnostic.warningSign": "",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": "",
+  "colors.filetypes": [""],
+  "diagnostic.virtualText": false,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "hover.target": "float"
+}
+```
 
-9. Run `. $PROFILE` in the terminal to reload your powershell profile
+8. Open nvim and wait until your plugins get installed. Close nvim
 
-10. ENJOY!!
+9. Reopen nvim and run `CocInstall coc-prettier coc-html coc-highlight coc-tsserver coc-pyright coc-markdownlint coc-lua coc-json coc-css coc-clangd`
+
+10. Run `. $PROFILE` in the terminal to reload your powershell profile
 
 ### TODO
 

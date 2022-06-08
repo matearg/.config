@@ -10,6 +10,7 @@ call plug#begin('~/AppData/Local/nvim-data/plugins')
 
 " Themes
 Plug 'navarasu/onedark.nvim'
+Plug 'sainnhe/gruvbox-material'
 
 " Other plugins
 Plug 'nvim-telescope/telescope.nvim'
