@@ -29,6 +29,8 @@ source ~/github/dotfiles/nvim/settings/plugins/configs/lualine.lua
 source ~/github/dotfiles/nvim/settings/plugins/configs/nvimtree.lua
 source ~/github/dotfiles/nvim/settings/plugins/configs/polyglot.vim
 source ~/github/dotfiles/nvim/settings/plugins/configs/project.lua
-source ~/github/dotfiles/nvim/settings/plugins/configs/syntastic.vim
 source ~/github/dotfiles/nvim/settings/plugins/configs/telescope.lua
 source ~/github/dotfiles/nvim/settings/plugins/configs/whichkey.lua
+
+" Not in use
+" source ~/github/dotfiles/nvim/settings/plugins/configs/syntastic.vim

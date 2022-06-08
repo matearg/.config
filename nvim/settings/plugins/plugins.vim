@@ -6,7 +6,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.config/nvim/plugins')
+call plug#begin('~/AppData/Local/nvim-data/plugins')
 
 " Themes
 Plug 'navarasu/onedark.nvim'
@@ -20,8 +20,8 @@ Plug 'folke/which-key.nvim'
 Plug 'moll/vim-bbye'
 
 " Lua useful plugins
-Plug 'nvim-lua/popup.nvim'  " An implementation of the Popup API from vim in Neovim
-Plug 'nvim-lua/plenary.nvim'  " Useful lua functions used ny lots of plugins
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
 
 " Git integrations
 Plug 'itchyny/vim-gitbranch'
@@ -37,13 +37,11 @@ Plug 'kyazdani42/nvim-tree.lua'
 " IDE plugins
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
-Plug 'alvan/vim-closetag'
-Plug 'vim-syntastic/syntastic'
 Plug 'vim-python/python-syntax'
 Plug 'ap/vim-css-color'
-Plug 'sheerun/vim-polyglot'
-Plug 'lukas-reineke/indent-blankline.nvim'  " Indentation with a blank line
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'tpope/vim-commentary'
+Plug 'sheerun/vim-polyglot'
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -51,5 +49,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Statuslines
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+
+" Not in use
+" Plug 'alvan/vim-closetag'
+" Plug 'vim-syntastic/syntastic'
 
 call plug#end()
