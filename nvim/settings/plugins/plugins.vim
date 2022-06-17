@@ -42,7 +42,7 @@ Plug 'vim-python/python-syntax'
 Plug 'ap/vim-css-color'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'tpope/vim-commentary'
-Plug 'sheerun/vim-polyglot'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -54,5 +54,6 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 " Not in use
 " Plug 'alvan/vim-closetag'
 " Plug 'vim-syntastic/syntastic'
+" Plug 'sheerun/vim-polyglot'
 
 call plug#end()
