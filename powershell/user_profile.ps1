@@ -9,6 +9,7 @@ Import-Module -Name posh-git
 # Alias
 Set-Alias ll ls
 Set-Alias g git
+Set-Alias lg lazygit
 Set-Alias vim nvim
 
 # PSReadLine
