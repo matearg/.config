@@ -11,6 +11,7 @@ Set-Alias ll ls
 Set-Alias g git
 Set-Alias lg lazygit
 Set-Alias vim nvim
+Set-Alias v nvim
 
 # PSReadLine
 Set-PSReadLineOption -PredictionSource History
