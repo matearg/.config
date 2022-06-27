@@ -95,7 +95,7 @@ symbol = " "
 symbol = " "
 
 [nodejs]
-format = "[$symbol]($style)"
+format = "[$symbol$version ]($style)"
 symbol = " "
 
 [package]
@@ -108,7 +108,7 @@ symbol = " "
 symbol = " "
 
 [python]
-format = "[$symbol]($style)"
+format = "[$symbol$version ]($style)"
 symbol = " "
 
 [ruby]
@@ -121,9 +121,9 @@ symbol = " "
 symbol = "ﯣ "
 
 [lua]
-format = "[$symbol]($style)"
+format = "[$symbol$version ]($style)"
 symbol = " "
 
 [c]
-format = "[$symbol]($style)"
+format = "[$symbol$version ]($style)"
 symbol = " "
