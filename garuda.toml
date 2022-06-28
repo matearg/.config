@@ -1,5 +1,6 @@
 ## FIRST LINE/ROW: Info & Status
 add_newline = false
+
 # First param ─┌
 [username]
 format = " [╭─$user]($style)@"
