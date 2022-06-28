@@ -17,14 +17,14 @@ disabled = true
 
 # Shows the shows the current user name
 [username]
-format = "[$user](white)"
+format = '[\[[$user](white)](blue)'
 show_always = true
 disabled = false
 
 # Shows the current host name
 [hostname]
 ssh_only = false
-format = "[@](bold red)[$hostname](white) "
+format = '[[@](red)[$hostname](white)\] ](blue)'
 trim_at = ""
 disabled = false
 
@@ -36,7 +36,7 @@ disabled = false
 
 # Shows the current directory
 [directory]
-style = "bold cyan"
+style = "cyan"
 truncate_to_repo = true
 truncation_length = 1
 truncation_symbol = ""
