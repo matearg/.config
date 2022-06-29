@@ -36,9 +36,7 @@ scoop update
 scoop install bat bottom clangd cmake coreutils dark delta fd gcc lazygit less lua make neovim nodejs notepadplusplus ntop oh-my-posh posh-git python ripgrep rust starship sudo terminal-icons winfetch z zeal
 ```
 
-3. ```sh
-   mkdir ~/github
-   ```
+3. ```mkdir ~/github```
 
 4. Clone this repo `git clone https://github.com/matearg/dotfiles.git` into ~/github
 
