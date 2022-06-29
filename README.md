@@ -18,11 +18,11 @@
 
 ## Setup
 
-1. Put this into your `$PROFILE`
+1. Put into your `$PROFILE`
 
 ```ps1
-. $env:USERPROFILE\.config\powershell\user_profile.ps1
-$ENV:STARSHIP_CONFIG = "$HOME\.config\starship.toml"
+. $env:USERPROFILE\github\dotfiles\powershell\user_profile.ps1
+$ENV:STARSHIP_CONFIG = "$HOME\github\dotfiles\starship-themes\starship.toml"
 ```
 
 2. Install scoop and dependencies:
@@ -33,7 +33,7 @@ scoop bucket add main
 scoop install git
 scoop bucket add extras
 scoop update
-scoop install bat gcc less neofetch neovim oh-my-posh starship sudo
+scoop install bat bottom clangd cmake coreutils dark delta fd gcc lazygit less lua make neovim nodejs notepadplusplus ntop oh-my-posh posh-git python ripgrep rust starship sudo terminal-icons winfetch z zeal
 ```
 
 3. ```sh
@@ -50,12 +50,13 @@ scoop install bat gcc less neofetch neovim oh-my-posh starship sudo
 mkdir ~/AppData/Local/nvim/
 ni ~/AppData/Local/nvim/init.vim
 ni ~/AppData/Local/nvim/coc-settings.json
+ni ~/AppData/Local/nvim/.luarc.json
 ```
 
-6. Put this into ~/AppData/Local/nvim/init.vim:
+6. Put into ~/AppData/Local/nvim/init.vim:
 
 ```vimscript
-" Import configs from ~/github/dotfiles/nvim/init.vim
+" Import configs
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/github/dotfiles/nvim/init.vim
@@ -75,13 +76,23 @@ source ~/github/dotfiles/nvim/init.vim
   "hover.target": "float"
 }
 ```
+8. And this into ~/AppData/Local/nvim/.luarc.json:
 
-8. Open nvim and wait until your plugins get installed. Close nvim
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+  "Lua.diagnostics.globals": [
+      "vim"
+  ]
+}
+```
 
-9. Reopen nvim and run `CocInstall coc-prettier coc-html coc-highlight coc-tsserver coc-pyright coc-markdownlint coc-lua coc-json coc-css coc-clangd`
+9. Open nvim and wait until your plugins get installed. Close nvim
 
-10. Run `. $PROFILE` in the terminal to reload your powershell profile
+10. Reopen nvim and run `CocInstall coc-prettier coc-html coc-highlight coc-tsserver coc-pyright coc-markdownlint coc-lua coc-json coc-css coc-clangd`
+
+Run `. $PROFILE` in the terminal to reload your powershell profile
 
 ### TODO
 
-- Create the same repository for GNU systems
+- Create the repository for GNU
