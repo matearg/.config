@@ -19,9 +19,9 @@ style = "blue"
 # success_symbol = "[❯](purple)"
 # error_symbol = "[❯](red)"
 # vicmd_symbol = "[❮](green)"
-success_symbol = "[>](purple)"
-error_symbol = "[>](red)"
-vicmd_symbol = "[<](green)"
+success_symbol = "[>](bold purple)"
+error_symbol = "[>](bold red)"
+vicmd_symbol = "[<](bold green)"
 
 [git_branch]
 format = "[$branch]($style)"
