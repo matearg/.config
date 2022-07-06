@@ -7,12 +7,22 @@ $directory\
 $git_branch\
 $git_status\
 [](fg:#FCA17D bg:#86BBD8)\
-$python\
-$nodejs\
-$lua\
 $c\
+$python\
+$lua\
 $ruby\
-[](fg:#86BBD8 bg:#33658A)\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+[](fg:#86BBD8 bg:#06969A)\
+$docker_context\
+[](fg:#06969A bg:#33658A)\
 $time\
 [ ](fg:#33658A)\
 """
@@ -46,6 +56,36 @@ truncation_symbol = "…/"
 # So either put "Important Documents" before "Documents" or use the substituted version:
 # "Important  " = "  "
 
+[c]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[lua]
+symbol = ""
+style = "bg:#86BBD8"
+format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[python]
+symbol = ""
+style = "bg:#86BBD8"
+format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[docker_context]
+symbol = " "
+style = "bg:#06969A"
+format = '[[ $symbol $context ](bg:#06969A)]($style) $path'
+
+[elixir]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[elm]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
 [git_branch]
 symbol = ""
 style = "bg:#FCA17D"
@@ -55,8 +95,23 @@ format = '[[ $symbol $branch ](bg:#FCA17D)]($style)'
 style = "bg:#FCA17D"
 format = '[[($all_status$ahead_behind )](bg:#FCA17D)]($style)'
 
-[python]
-symbol = ""
+[golang]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[haskell]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[java]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[julia]
+symbol = " "
 style = "bg:#86BBD8"
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 
@@ -65,16 +120,15 @@ symbol = ""
 style = "bg:#86BBD8"
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 
-[lua]
-symbol = ""
+[nim]
+symbol = " "
 style = "bg:#86BBD8"
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 
-[c]
-symbol = ""
+[rust]
+symbol = ""
 style = "bg:#86BBD8"
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
-
 
 [ruby]
 symbol = ""
