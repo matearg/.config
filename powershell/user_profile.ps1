@@ -26,7 +26,7 @@ Invoke-Expression (&starship init powershell)
 
 # Oh my Posh
 # oh-my-posh --init --shell pwsh --config ~\github\dotfiles\powershell\ohmyposh-themes\mvp.omp.json | Invoke-Expression
-# oh-my-posh --init --shell pwsh --config ~\scoop\apps\oh-my-posh\current\themes\jandedobbeleer.omp.json | Invoke-Expression
+# oh-my-posh --init --shell pwsh --config ~\scoop\apps\oh-my-posh\current\themes\onehalf.minimal.omp.json | Invoke-Expression
 
 # Utilities
 function which ($command) {
