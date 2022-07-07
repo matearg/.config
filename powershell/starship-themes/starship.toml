@@ -16,3 +16,6 @@ error_symbol = "[❯](bold red)" # The "error_symbol" segment is being set to "�
 # Disable the package module, hiding it from the prompt completely
 [package]
 disabled = false
+
+[c]
+symbol = " "
