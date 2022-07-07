@@ -7,7 +7,8 @@ Import-Module -Name PSReadLine
 Import-Module -Name posh-git
 
 # Alias
-Set-Alias ll ls
+Set-Alias ll Get-ChildItem
+Set-Alias re Rename-Item
 Set-Alias g git
 Set-Alias gg lazygit
 Set-Alias vim nvim
