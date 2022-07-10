@@ -22,7 +22,7 @@
 
 ```ps1
 . $env:USERPROFILE\github\dotfiles\powershell\user_profile.ps1
-$ENV:STARSHIP_CONFIG = "$HOME\github\dotfiles\starship-themes\starship.toml"
+$ENV:STARSHIP_CONFIG = "$HOME\github\dotfiles\powershell\starship-themes\starship.toml"
 ```
 
 2. Install scoop and dependencies:
