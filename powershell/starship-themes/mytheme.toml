@@ -127,5 +127,5 @@ format = 'via [$symbol]($style)'
 format = 'via [$symbol]($style)'
 
 [c]
-symbol = " "
+# symbol = " "
 format = 'via [$symbol]($style)'
