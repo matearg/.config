@@ -28,7 +28,7 @@ disabled = false
 [directory]
 style = "cyan"
 truncate_to_repo = true
-truncation_length = 0
+truncation_length = 1
 truncation_symbol = "repo: "
 disabled = false
 
