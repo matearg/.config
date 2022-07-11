@@ -17,7 +17,8 @@ disabled = true
 
 # Shows the shows the current user name
 [username]
-format = '[\[[$user](white)](blue)'
+# format = '[\[[$user](white)](blue)'
+format = '[\[[m](white)](blue)'
 show_always = true
 disabled = false
 
@@ -25,7 +26,7 @@ disabled = false
 [hostname]
 ssh_only = false
 format = '[[@](red)[$hostname](white)\] ](blue)'
-trim_at = ""
+trim_at = "a"
 disabled = false
 
 # Replace the "❯" symbol in the prompt with "✗" or "❯❯❯" or "×" or "λ" or "➜"
