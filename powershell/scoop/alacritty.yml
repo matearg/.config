@@ -470,7 +470,7 @@ schemes:
 # *SolarizedDark
 # *TomorrowNight
 
-colors: *OneDarkModded
+colors: *Nord
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
