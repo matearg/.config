@@ -40,22 +40,42 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: Hasklug NF
+    # family: FantasqueSansMono NF
+    # family: Hasklug NF
+    # family: Iosevka NF
+    # family: mononoki NF
+    family: SauceCodePro NF
+    # family: UbuntuMono NF
     style: Regular
 
   # Bold font face
   bold:
-    family: Hasklug NF
+    # family: FantasqueSansMono NF
+    # family: Hasklug NF
+    # family: Iosevka NF
+    # family: mononoki NF
+    family: SauceCodePro NF
+    # family: UbuntuMono NF
     style: Bold
 
   # Italic font face
   italic:
-    family: Hasklug NF
+    # family: FantasqueSansMono NF
+    # family: Hasklug NF
+    # family: Iosevka NF
+    # family: mononoki NF
+    family: SauceCodePro NF
+    # family: UbuntuMono NF
     style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: Hasklug NF
+    # family: FantasqueSansMono NF
+    # family: Hasklug NF
+    # family: Iosevka NF
+    # family: mononoki NF
+    family: SauceCodePro NF
+    # family: UbuntuMono NF
     style: Bold Italic
 
   # for notebook
