@@ -1,0 +1,218 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+env:
+  # if alacritty available, otherwise `xterm-256color` is used.
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    lines: 34
+    columns: 136
+
+  # position:
+  #   x: 0
+  #   y: 0
+
+  # padding:
+  #   x: 0
+  #   y: 0
+
+  decorations: none
+
+   # The value `0.0` is completely transparent and `1.0` is opaque.
+  opacity: 0.9
+  startup_mode: Windowed
+  title: Alacritty
+  dynamic_title: true
+
+scrolling:
+  history: 0
+
+  # Scrolling distance multiplier.
+  multiplier: 3
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    family: Hasklug NF
+    style: Regular
+
+  # Bold font face
+  bold:
+    family: Hasklug NF
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: Hasklug NF
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    family: Hasklug NF
+    style: Bold Italic
+
+  # Point size
+  size: 18.0
+
+  # offset:
+  #   x: 0
+  #   y: 0
+
+  # glyph_offset:
+  #   x: 0
+  #   y: 0
+
+  builtin_box_drawing: true
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+# Colors (Tomorrow Night)
+colors:
+  primary:
+    background: '#1d1f21'
+    foreground: '#c5c8c6'
+    dim_foreground: '#828482'
+    bright_foreground: '#eaeaea'
+
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+
+  search:
+    matches:
+      foreground: '#000000'
+      background: '#ffffff'
+    focused_match:
+      foreground: '#ffffff'
+      background: '#000000'
+    bar:
+      background: '#c5c8c6'
+      foreground: '#1d1f21'
+
+  hints:
+    start:
+      foreground: '#1d1f21'
+      background: '#e9ff5e'
+    end:
+      foreground: '#e9ff5e'
+      background: '#1d1f21'
+
+  line_indicator:
+    foreground: None
+    background: None
+
+  selection:
+    text: CellBackground
+    background: CellForeground
+
+  normal:
+    black:   '#1d1f21'
+    red:     '#cc6666'
+    green:   '#b5bd68'
+    yellow:  '#f0c674'
+    blue:    '#81a2be'
+    magenta: '#b294bb'
+    cyan:    '#8abeb7'
+    white:   '#c5c8c6'
+
+  bright:
+    black:   '#666666'
+    red:     '#d54e53'
+    green:   '#b9ca4a'
+    yellow:  '#e7c547'
+    blue:    '#7aa6da'
+    magenta: '#c397d8'
+    cyan:    '#70c0b1'
+    white:   '#eaeaea'
+
+  dim:
+    black:   '#131415'
+    red:     '#864343'
+    green:   '#777c44'
+    yellow:  '#9e824c'
+    blue:    '#556a7d'
+    magenta: '#75617b'
+    cyan:    '#5b7d78'
+    white:   '#828482'
+
+  # indexed_colors: []
+
+  transparent_background_colors: true
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: false
+
+cursor:
+  style:
+    shape: Beam
+    blinking: On
+
+  vi_mode_style: None
+
+  blink_interval: 750
+
+  unfocused_hollow: true
+
+  thickness: 0.15
+
+# Live config reload (changes require restart)
+live_config_reload: true
+
+# Shell
+shell:
+  program: C:\Users\mateo\AppData\Local\Microsoft\WindowsApps\Microsoft.PowerShell_8wekyb3d8bbwe\pwsh.exe
+  args:
+  - -nologo
+
+working_directory: C:/Users/mateo
+
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+  hide_when_typing: false
+
+mouse_bindings:
+  - { mouse: Right,                 action: ExpandSelection }
+  - { mouse: Right,  mods: Control, action: ExpandSelection }
+  - { mouse: Middle, mode: ~Vi,     action: PasteSelection  }
+
+key_bindings:
+  - { key: Paste,                                       action: Paste          }
+  - { key: Copy,                                        action: Copy           }
+
+   # Search Mode
+  - { key: Return,                mode: Search|Vi,  action: SearchConfirm         }
+  - { key: Escape,                mode: Search,     action: SearchCancel          }
+  - { key: C,      mods: Control, mode: Search,     action: SearchCancel          }
+  - { key: U,      mods: Control, mode: Search,     action: SearchClear           }
+  - { key: W,      mods: Control, mode: Search,     action: SearchDeleteWord      }
+  - { key: P,      mods: Control, mode: Search,     action: SearchHistoryPrevious }
+  - { key: N,      mods: Control, mode: Search,     action: SearchHistoryNext     }
+  - { key: Up,                    mode: Search,     action: SearchHistoryPrevious }
+  - { key: Down,                  mode: Search,     action: SearchHistoryNext     }
+  - { key: Return,                mode: Search|~Vi, action: SearchFocusNext       }
+  - { key: Return, mods: Shift,   mode: Search|~Vi, action: SearchFocusPrevious   }
+
+   # (Windows, Linux, and BSD only)
+  - { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
+  - { key: C,              mods: Control|Shift,                   action: Copy             }
+  - { key: F,              mods: Control|Shift, mode: ~Search,    action: SearchForward    }
+  - { key: B,              mods: Control|Shift, mode: ~Search,    action: SearchBackward   }
+  - { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
+  - { key: Insert,         mods: Shift,                           action: PasteSelection   }
+  - { key: Key0,           mods: Control,                         action: ResetFontSize    }
+  - { key: Equals,         mods: Control,                         action: IncreaseFontSize }
+  - { key: Plus,           mods: Control,                         action: IncreaseFontSize }
+  - { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
+  - { key: Minus,          mods: Control,                         action: DecreaseFontSize }
+  - { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
+
+  # (Windows only)
+  - { key: Return,   mods: Alt,           action: ToggleFullscreen }
