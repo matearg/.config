@@ -31,8 +31,8 @@ disabled = false
 
 # Replace the "❯" symbol in the prompt with "✗" or "❯❯❯" or "×" or "λ" or "➜"
 [character]
-success_symbol = "[➜](bold green)"
-error_symbol = "[➜](bold red)"
+success_symbol = "[➜](green)"
+error_symbol = "[➜](red)"
 disabled = false
 
 # Shows the current directory
