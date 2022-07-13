@@ -4,9 +4,15 @@ env:
   TERM: xterm-256color
 
 window:
+  # for notebook
   dimensions:
-    lines: 49
-    columns: 190
+    lines: 39 
+    columns: 158
+
+  # for pc
+  # dimensions:
+  #   lines: 49 
+  #   columns: 190
 
   # position:
   #   x: 0
@@ -25,7 +31,7 @@ window:
   dynamic_title: true
 
 scrolling:
-  history: 10000
+  history: 5000
 
   # Scrolling distance multiplier.
   multiplier: 3
@@ -52,8 +58,11 @@ font:
     family: Hasklug NF
     style: Bold Italic
 
-  # Point size
-  size: 13.0
+  # for notebook
+  size: 16.0
+
+  #for pc
+  # size: 13.0
 
   # offset:
   #   x: 0
@@ -290,6 +299,55 @@ schemes:
     selection:
       text:       CellForeground
       background: '#3e4451' # syntax-selection-color
+
+    normal:
+      black:      '#5c6370' # mono-3
+      red:        '#e06c75' # red 1
+      green:      '#98c379'
+      yellow:     '#e5c07b' # orange 2
+      blue:       '#61afef'
+      magenta:    '#c678dd'
+      cyan:       '#56b6c2'
+      white:      '#828997' # mono-2
+
+    transparent_background_colors: true
+
+  ### OneDarkModded ###
+  OneDarkModded: &OneDarkModded
+    primary:
+      background: '#001B26'
+      foreground: '#abb2bf'
+    cursor:
+      text:       CellBackground
+      cursor:     '#528bff' # syntax-cursor-color
+    selection:
+      text:       CellForeground
+      background: '#3e4451' # syntax-selection-color
+
+    normal:
+      black:      '#5c6370' # mono-3
+      red:        '#e06c75' # red 1
+      green:      '#98c379'
+      yellow:     '#e5c07b' # orange 2
+      blue:       '#61afef'
+      magenta:    '#c678dd'
+      cyan:       '#56b6c2'
+      white:      '#828997' # mono-2
+
+    transparent_background_colors: true
+
+  ### OneKai ###
+  OneKai: &OneKai
+    primary:
+      background: '#1e1e1e'
+      foreground: '#abb2bf'
+    cursor:
+      text:       CellBackground
+      cursor:     '#528bff' # syntax-cursor-color
+    selection:
+      text:       CellForeground
+      background: '#3e4451' # syntax-selection-color
+
     normal:
       black:      '#5c6370' # mono-3
       red:        '#e06c75' # red 1
@@ -406,11 +464,13 @@ schemes:
 # *Nord
 # *OceanicNext
 # *OneDark
+# *OneDarkModded
+# *OneKai
 # *Palenight
 # *SolarizedDark
 # *TomorrowNight
 
-colors: *GruvboxDark
+colors: *OneDarkModded
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
