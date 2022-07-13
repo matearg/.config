@@ -25,7 +25,7 @@ window:
   decorations: none
 
    # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.9
+  opacity: 0.95
   startup_mode: Windowed
   title: Alacritty
   dynamic_title: true
@@ -75,7 +75,7 @@ font:
   builtin_box_drawing: true
 
 # If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: true
+draw_bold_text_with_bright_colors: false
 
 #######################################
 ##      START OF COLORSCHEMES       ##
@@ -197,6 +197,40 @@ schemes:
       magenta: '#d3869b'
       cyan:    '#8ec07c'
       white:   '#ebdbb2'
+
+    transparent_background_colors: true
+  Kanagawa: &Kanagawa
+    primary:
+      background: '0x1f1f28'
+      foreground: '0xdcd7ba'
+
+    normal:
+      black:   '0x090618'
+      red:     '0xc34043'
+      green:   '0x76946a'
+      yellow:  '0xc0a36e'
+      blue:    '0x7e9cd8'
+      magenta: '0x957fb8'
+      cyan:    '0x6a9589'
+      white:   '0xc8c093'
+
+    bright:
+      black:   '0x727169'
+      red:     '0xe82424'
+      green:   '0x98bb6c'
+      yellow:  '0xe6c384'
+      blue:    '0x7fb4ca'
+      magenta: '0x938aa9'
+      cyan:    '0x7aa89f'
+      white:   '0xdcd7ba'
+
+    selection:
+      background: '0x2d4f67'
+      foreground: '0xc8c093'
+
+    indexed_colors:
+      - { index: 16, color: '0xffa066' }
+      - { index: 17, color: '0xff5d62' }
 
     transparent_background_colors: true
 
@@ -453,14 +487,12 @@ schemes:
     
     transparent_background_colors: true
 
-######################################################################
-## SET THEME: Choose ONE color scheme from those in the above list. ##
-## ###################################################################
 # Available themes are:
 # *DoomOne
 # *Dracula
 # *GruvboxDark
 # *MonokaiPro
+# *Kanagawa
 # *Nord
 # *OceanicNext
 # *OneDark
@@ -470,7 +502,7 @@ schemes:
 # *SolarizedDark
 # *TomorrowNight
 
-colors: *Nord
+colors: *Kanagawa
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
