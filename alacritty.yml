@@ -5,8 +5,17 @@ env:
 
 window:
   dimensions:
-    lines: 39 
+    # Hasklug, SauceCodePro
+    # lines: 39 
+    # columns: 158
+
+    # mononoki
+    lines: 44   
     columns: 158
+
+    # FantasqueSansMono
+    # lines: 48 
+    # columns: 172
 
   # position:
   #   x: 0
@@ -19,7 +28,7 @@ window:
   decorations: none
 
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.95
+  opacity: 0.9
   # opacity: 1.0
   startup_mode: Windowed
   title: Alacritty
@@ -36,32 +45,31 @@ font:
   normal:
     # family: FantasqueSansMono NF
     # family: Hasklug NF
-    # family: mononoki NF
-    family: SauceCodePro NF
+    family: mononoki NF
+    # family: SauceCodePro NF
     style: Regular
 
   bold:
     # family: FantasqueSansMono NF
     # family: Hasklug NF
-    # family: mononoki NF
-    family: SauceCodePro NF
+    family: mononoki NF
+    # family: SauceCodePro NF
     style: Bold
 
   italic:
     # family: FantasqueSansMono NF
     # family: Hasklug NF
-    # family: Iosevka NF
-    family: SauceCodePro NF
+    family: mononoki NF
+    # family: SauceCodePro NF
     style: Italic
 
   bold_italic:
     # family: FantasqueSansMono NF
     # family: Hasklug NF
-    # family: mononoki NF
-    family: SauceCodePro NF
+    family: mononoki NF
+    # family: SauceCodePro NF
     style: Bold Italic
 
-  # for notebook
   size: 16.0
 
   # offset:
