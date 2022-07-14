@@ -58,7 +58,6 @@ format = 'via [$symbol]($style)'
 
 [git_branch]
 symbol = " "
-format = 'via [$symbol]($style)'
 
 [golang]
 # symbol = " "
@@ -66,7 +65,6 @@ format = 'via [$symbol]($style)'
 
 [hg_branch]
 symbol = " "
-format = 'via [$symbol]($style)'
 
 [java]
 # symbol = " "
