@@ -6,16 +6,16 @@ env:
 window:
   dimensions:
     # Hasklug, SauceCodePro
-    # lines: 39
-    # columns: 158
+    # lines: 40
+    # columns: 159
 
     # mononoki
-    # lines: 44   
-    # columns: 158
+    # lines: 45 
+    # columns: 159
 
     # FantasqueSansMono
-    lines: 48
-    columns: 172
+    lines: 49
+    columns: 173
 
   # position:
   #   x: 0
