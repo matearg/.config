@@ -5,9 +5,8 @@ env:
 
 window:
   dimensions:
-    # FantasqueSansMono
-    lines: 49
-    columns: 173
+    lines: 39
+    columns: 146
 
   # position:
   #   x: 0
