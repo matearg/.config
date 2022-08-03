@@ -9,7 +9,3 @@ mkdir ~/github
 cd ~/github
 git clone https://github.com/matearg/dotfiles.git
 ```
-
-## TODO
-
-- Create the repository for GNU
