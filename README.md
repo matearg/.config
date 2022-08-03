@@ -1,7 +1,4 @@
 # dotfiles
-
-> Window 10 only (for now)
-
 ## Setup (Required)
 
 ```ps1
